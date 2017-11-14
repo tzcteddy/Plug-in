@@ -1,0 +1,325 @@
+/* detail public style */
+
+.de-btn-ico {
+    padding-left: 32px;
+    background: url(../image/detail-ico.png) no-repeat;
+    _background-image: url(../image/detail-ico-ie.png);
+}
+.de-glb-btn {
+    width: 164px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.de-all-bord {
+    border: 1px solid #e6e6e6;
+}
+
+.de-left-bord {
+    border-left: 1px solid #e6e6e6;
+}
+
+.de-bottom-bord {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.de-twelve-font {
+    font-size: 12px;
+}
+
+.de-sixteen-font {
+    font-size: 16px;
+}
+
+.de-drei-col {
+    color: #333;
+}
+
+.de-circul-corn {
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+/*detail public style end */
+
+/* parent box */
+.container, .car-detail {
+    margin: 0 auto;
+}
+
+.ad {
+    width: 1160px;
+    height: 60px;
+    margin-top: 16px;
+}
+
+
+
+.car-detail {
+    width: 1160px;
+}
+/* parent box end */
+
+/* bread crumbs */
+.car-detail .bread-crumbs {
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+}
+
+.car-detail .bread-crumbs a {
+    color: #666;
+}
+/* bread crumbs end */
+
+/* header main */
+
+.header-main .confirm {
+    padding-top: 40px;
+}
+.header-main:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.header-main .header-img {
+    width: 600px;
+    float: left;
+   /* height: 450px;*/
+    height: auto;
+    position: relative;
+}
+
+.header-main .confirm .header-img {
+    width: 520px;
+}
+
+.header-main .confirm .img {
+    width: 520px;
+    height: 390px;
+}
+
+.header-img .img-count {
+    height: 24px;
+    line-height: 24px;
+    padding-left: 33px;
+    background-position: -7px -663px;
+    background-color: #000000;
+    filter: alpha(opacity=50);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: absolute;
+   /* left: 10px;
+    bottom: 30px;*/
+    left: auto;
+    right: 0;
+    bottom: 10px;
+}
+.header-img .img-count:hover{
+    background-color:rgba(0, 0, 0, 0.7) ;
+}
+
+.header-img .img-count .num{
+    padding: 0 10px 0 15px;
+}
+
+.header-main .header-info {
+    width:525px;
+    /*width: 540px;*/
+    float: right;
+    height: 450px;
+    /*margin-left: 620px;*/
+    /*_margin-left: 624px;*/
+}
+
+/*厂商为空设置*/
+.header-main .info-empty .info-upper .number{
+    margin:10px 0 20px;
+}
+.header-main .info-empty .info-upper .price{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+.header-main .info-empty .info-sub{
+    padding-top:50px;
+}
+.header-main .info-empty .info-sub .send{
+    padding-top:50px;
+}
+
+.header-main .confirm .header-info {
+    width: 610px;
+    margin-left: 550px;
+    _margin-left: 544px;
+}
+
+.header-info .info-upper .number {
+    margin: 4px 0 15px;
+}
+
+.confirm .header-info .number {
+    margin: 16px 0 20px;
+}
+
+.header-info .info-upper .number .n {
+    padding-right: 40px;
+}
+
+.tab {
+    float: left;
+}
+
+.confirm .tab {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.header-info .info-upper .num {
+    float: right;
+}
+
+.tab li {
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    margin-right: 6px;
+    padding: 0 2px;
+    background-color: #00b2b3;
+    color: #fff;
+}
+
+.confirm .tab li {
+    background-color: #d70000;
+    border-radius: 1px;
+}
+
+.header-info .info-upper .title {
+    height: 66px;
+    line-height: 33px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/*缩略图部分*/
+.bannerBox img{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.bannerBox{
+    margin: 0 auto;
+    width: 600px;
+}
+.bannerBox .bigImage{
+    position: relative;
+    width: 600px;
+    height: 450px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.bannerBox .banner{
+    position: relative;
+    margin-top: 10px;
+    width: 600px;
+    overflow: hidden;
+}
+.bannerBox .banner .bannerInner{
+    position: relative;
+    margin: 0 auto;
+    width: 533px;
+    height: 74px;
+    overflow: hidden;
+}
+.bannerBox .bannerInner .bannerList{
+    position: absolute;
+    left: -12px;
+    font-size: 0;
+}
+.bannerBox .bannerInner li{
+    margin-left: 12px;
+    display: inline-block;
+    width: 93px;
+    height: 70px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.bannerBox .bannerInner .curLi{
+    border: 2px solid #ff7000;
+}
+.bannerBox .banner .leftBtn,.bannerBox .banner .rightBtn{
+    position: absolute;
+    top: 20px;
+    display: inline-block;
+    width: 18px;
+    height: 31px;
+    line-height: 74px;
+    text-align: center;
+    background-image:url(../image/jian@2x.png) ;
+    background-image:url(../image/jian.png) \9;
+    background-image:url(../image/jian@2x.png) \9 \0;
+    background-repeat: no-repeat;
+    background-size: 18px 122px;
+    cursor: pointer;
+}
+.bannerBox .banner .leftBtn{
+    left: 0;
+    background-position: 0 -30px;
+}
+.bannerBox .banner .rightBtn{
+    right: 0;
+    background-position: 0 0;
+}
+.bannerBox .banner .leftBtn:hover{
+    background-position: 0 -91px;
+}
+.bannerBox .banner .rightBtn:hover{
+
+    background-position: 0 -61px;
+}
+/*.bannerBox .banner .leftBtn:after,.bannerBox .banner .rightBtn:after{
+    position: absolute;
+    top: 50%;
+    display: block;
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    border: 7px solid transparent;
+    border-left-color: #dedede;
+    border-bottom-color:#dedede;
+}
+.bannerBox .banner .leftBtn:hover:after,.bannerBox .banner .rightBtn:hover:after{
+    border-left-color: #cccccc;
+    border-bottom-color:#cccccc;
+}
+.bannerBox .banner .leftBtn:after{
+    left: 51%;
+    margin: -15px 0 0 -9px;
+    -webkit-transform: rotateZ(45deg);
+    -moz-transform: rotateZ(45deg);
+    -ms-transform:rotateZ(45deg) ;
+    -o-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+}
+.bannerBox .banner .rightBtn:after{
+    right: 50%;
+    margin: -15px -9px 0 0;
+    -webkit-transform: rotateZ(225deg);
+    -moz-transform: rotateZ(225deg);
+    -ms-transform:rotateZ(225deg) ;
+    -o-transform: rotateZ(225deg);
+    transform: rotateZ(225deg);
+}*/
+/*缩略图部分结束*/
+

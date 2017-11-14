@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PLACHOLDER</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<div class="person_info">
+    <form class="form" action="">
+        <div class="name_box clear">
+            <span class="info_text">*您的姓名：</span>
+            <div class="name_wrap input_wrap">
+                <input class="name" id="name" type="text" placeholder="请输入姓名" maxlength="4" autocomplete="off">
+                <p class="placeholder name_placeholder" style="display: none">请输入姓名</p>
+            </div>
+        </div>
+        <div class="phone_box clear">
+            <span class="info_text">*联系方式：</span>
+            <div class="phone_wrap input_wrap">
+                <input class="phone" id="phone" type="text" placeholder="请输入电话" maxlength="11" autocomplete="off">
+                <p class="placeholder phone_placeholder" style="display: none">请输入电话</p>
+            </div>
+        </div>
+        <div  id="err" >
+            <div class="err_box" style="display: none">
+                <i class="err_icon"></i>
+                <span class="err_text">请填写正确的信息</span>
+            </div>
+        </div>
+        <div class="tip">
+            <p>*您所填写的相关资料，我们将进行严格保密并   确保资料绝不外泄，敬请放心！</p>
+        </div>
+    </form>
+</div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/input.js"></script>
+<script>
+    $(".input_wrap").each(function (index, item) {
+        Input.textInputEle = $(item).children("input");
+        Input.placeholderEle = $(item).children(".placeholder");
+        Input.init();
+    })
+</script>
+</html>
