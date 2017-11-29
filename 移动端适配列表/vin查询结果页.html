@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>VIN查询结果开发</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/vinresult.css">
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize =50 * (clientWidth / 375) + 'px';
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</head>
+<body>
+<header class="header">
+    <div class="header_bg">
+        <span class="older_no">订单编号：654568</span>
+    </div>
+    <div class="main">
+        <div class="content header_content">
+            <div class="header_title">
+                <div class="car_style">奔驰-GLK300</div>
+                <div class="car_desc">3.0-A/MT动感天窗型 四驱 节能版 京Ⅴ(国Ⅳ)</div>
+                <div class="car_vin">VIN：LVHRR7894F5001262</div>
+            </div>
+            <ul class="header_info clear">
+                <li class="header_info_list">
+                    <dl>
+                        <dt>生产年份</dt>
+                        <dd>2015</dd>
+                    </dl>
+                </li>
+                <li class="header_info_list">
+                    <dl>
+                        <dt>发动机号</dt>
+                        <dd>3453455</dd>
+                    </dl>
+                </li>
+            </ul>
+            <div class="header_model">
+                <dl>
+                    <dt>车辆型号</dt>
+                    <dd>DHW6494R7ARE</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</header>
+<!--车辆基本信息-->
+<section class="section">
+    <div class="main">
+        <div class="content">
+            <h2 class="main_title">车辆基本信息</h2>
+            <ul class="section_info base_info clear">
+                <li class="section_info_list">
+                    <dl>
+                        <dt>品牌</dt>
+                        <dd>奔驰</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>厂商</dt>
+                        <dd>北京奔驰</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>车系</dt>
+                        <dd>GLK</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>年款</dt>
+                        <dd>2013</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>出场时间</dt>
+                        <dd>2013</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>停产时间</dt>
+                        <dd>2014</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>变速形式</dt>
+                        <dd>7档 手自一体</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>车身形式</dt>
+                        <dd>三厢</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>排量</dt>
+                        <dd>3.2L</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>车门</dt>
+                        <dd>5门</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>排放标准</dt>
+                        <dd>国Ⅱ</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>驱动方式</dt>
+                        <dd>四驱</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--价格-->
+<section class="section">
+    <div class="main">
+        <div class="content">
+            <div class="price_direct clear"><span class="dt">厂商指导价(万元)</span><span class="dd">48.80</span></div>
+            <div class="price_direct clear"><span class="dt">新车成交价(万元)</span><span class="dd">48.80</span></div>
+            <div class="price_direct clear"><span class="dt">二手车价(万元)</span><span class="dd">48.80-56.00</span></div>
+        </div>
+    </div>
+</section>
+<!--车身参数信息-->
+<section class="section">
+    <div class="main">
+        <div class="content">
+            <h2 class="main_title">车身参数信息</h2>
+            <ul class="section_info clear">
+                <li class="section_info_list">
+                    <dl>
+                        <dt>外型尺寸(mm)</dt>
+                        <dd>4481/1746/1526</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>前/后轮距(mm)</dt>
+                        <dd>1505/1489</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>前/后悬长度(mm)</dt>
+                        <dd>890/979</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>整备质量(kg)</dt>
+                        <dd>1320</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>最大总质量(kg)</dt>
+                        <dd>1754</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>油箱容积(l)</dt>
+                        <dd>60</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>行李箱容积(l)</dt>
+                        <dd>620</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>车门数(含后车门)</dt>
+                        <dd>4</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>乘员数(含驾驶员)</dt>
+                        <dd>5</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>最小离地间距(mm)</dt>
+                        <dd>122</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>最小转弯直径(m)</dt>
+                        <dd>10.7</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>接近角(°)</dt>
+                        <dd>14</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>车体形式</dt>
+                        <dd>三厢</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>轴距(mm)</dt>
+                        <dd>2612</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>风阻系数(cd)</dt>
+                        <dd>0.34</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+<!--发动机参数信息-->
+<section class="section">
+    <div class="main">
+        <div class="content">
+            <h2 class="main_title">发动机参数信息</h2>
+            <ul class="section_info clear">
+                <li class="section_info_list">
+                    <dl>
+                        <dt>发动机型号</dt>
+                        <dd>N6A10XA3APSA</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>发动机生产厂家</dt>
+                        <dd>神龙汽车有限公司</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>最大功率(kw(ps)/rpm)</dt>
+                        <dd>78(106)/5750</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>燃料类型标号</dt>
+                        <dd>无铅汽油93#</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>燃油供给方式</dt>
+                        <dd>多点顺序燃油喷射</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>综合油耗(L/100km)</dt>
+                        <dd>8.5</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>排气量(ml)</dt>
+                        <dd>1587</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>压缩比</dt>
+                        <dd>10.5</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>发动机放置方向</dt>
+                        <dd>直列</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>发动机放置位置</dt>
+                        <dd>前置</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>缸径(mm)</dt>
+                        <dd>0</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>行程(mm)</dt>
+                        <dd>0</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>每缸气门数</dt>
+                        <dd>4</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>缸体材料</dt>
+                        <dd>铸铁</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>进气方式</dt>
+                        <dd>自然进气</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>升功率(kw/l)</dt>
+                        <dd>49.15</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>最大扭矩(n.m/rpm)</dt>
+                        <dd>142/4000</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>冷却系统</dt>
+                        <dd>水冷</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>发动机描述</dt>
+                        <dd>1.6L 直列四缸，双顶置凸轮轴（DOHC），16气门， 多点顺序燃油喷射，电子节气门</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+<!--底盘参数信息-->
+<section class="section">
+    <div class="main">
+        <div class="content">
+            <h2 class="main_title">底盘参数信息</h2>
+            <ul class="section_info clear">
+                <li class="section_info_list">
+                    <dl>
+                        <dt>变速器形式</dt>
+                        <dd>4档 手自一体</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>排档方式</dt>
+                        <dd>地排</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>驱动方式</dt>
+                        <dd>前驱</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>转向系统</dt>
+                        <dd>齿轮齿条式，可变助力转向</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>前悬架</dt>
+                        <dd>麦克弗逊式独立悬架，螺旋弹簧</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>后悬架</dt>
+                        <dd>可变形横梁式，带横向稳定杆</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>前制动</dt>
+                        <dd>通风盘</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>后制动</dt>
+                        <dd>盘式</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>前轮胎规格</dt>
+                        <dd>205/55 R16</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>后轮胎规格</dt>
+                        <dd>205/55 R16</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>备胎规格</dt>
+                        <dd>205/55 R16</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>驱动轮胎宽度(mm)</dt>
+                        <dd>205</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>驱动轮胎扁平比(%)</dt>
+                        <dd>55</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>驱动轮毂直径(英寸)</dt>
+                        <dd>16</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>前轮毂材料</dt>
+                        <dd>铝合金</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>后轮毂材料</dt>
+                        <dd>铝合金</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>备胎轮毂材料</dt>
+                        <dd>钢制</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>备胎数量</dt>
+                        <dd>1</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>变速形式</dt>
+                        <dd>7档 手自一体</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>车身形式</dt>
+                        <dd>三厢</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>排量</dt>
+                        <dd>3.2L</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>车门</dt>
+                        <dd>5门</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>排放标准</dt>
+                        <dd>国Ⅱ</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>驱动方式</dt>
+                        <dd>四驱</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+<!--行驶参数信息-->
+<section class="section">
+    <div class="main">
+        <div class="content">
+            <h2 class="main_title">行驶参数信息</h2>
+            <ul class="section_info clear">
+                <li class="section_info_list">
+                    <dl>
+                        <dt>保修期</dt>
+                        <dd>2年/4万公里</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>最高车速(km/h)</dt>
+                        <dd>173</dd>
+                    </dl>
+                </li>
+                <li class="section_info_list">
+                    <dl>
+                        <dt>安全气囊</dt>
+                        <dd>4</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+<!--参数配置 and 车身配置-->
+<section class="section">
+    <div class="main">
+        <div class="content">
+            <h2 class="main_title"><div class="select_title"><span class="config active" data_relate="car_param">参数配置</span></div><div class="select_title"><span class="config" data_relate="car_body">车身配置</span></div></h2>
+            <!--参数配置-->
+            <div class="car_param_detail">
+                <div class="param_label">
+                    <div class="label_list"><i class="label_icon1"></i><span class="label_text">有配置</span></div>
+                    <div class="label_list"><i class="label_icon2"></i><span class="label_text">无配置</span></div>
+                    <div class="label_list"><i class="label_icon3"></i><span class="label_text">配置未知</span></div>
+                </div>
+                <div class="detail_box detail_box_active">
+                    <h3><span>外观配置</span><i class="title_icon"></i></h3>
+                    <ul class="param_info_active">
+                        <li class="param_info_list"><span class="param_ctn">单排气管</span><i class="param_icon"></i></li>
+                        <li class="param_info_list"><span class="param_ctn">双排气管</span><i class="param_icon"></i></li>
+                        <li class="param_info_list param_info_w"><span class="param_ctn">单排气管</span><i class="param_icon"></i></li>
+                        <li class="param_info_list"><span class="param_ctn">双排气管</span><i class="param_icon"></i></li>
+                        <li class="param_info_list"><span class="param_ctn">双排气管</span><i class="param_icon"></i></li>
+                        <li class="param_info_list"><span class="param_ctn">双排气管</span><i class="param_icon"></i></li>
+                    </ul>
+                </div>
+                <div class="detail_box">
+                    <h3><span>外观配置</span><i class="title_icon"></i></h3>
+                    <ul class="param_info">
+                        <li class="param_info_list"><span class="param_ctn">单排气管</span><i class="param_icon"></i></li>
+                        <li class="param_info_list"><span class="param_ctn">双排气管</span><i class="param_icon"></i></li>
+                        <li class="param_info_list param_info_h"><span class="param_ctn">单排气管</span><i class="param_icon"></i></li>
+                        <li class="param_info_list"><span class="param_ctn">双排气管</span><i class="param_icon"></i></li>
+                        <li class="param_info_list"><span class="param_ctn">双排气管</span><i class="param_icon"></i></li>
+                        <li class="param_info_list"><span class="param_ctn">双排气管</span><i class="param_icon"></i></li>
+                    </ul>
+                </div>
+                <div class="detail_box">
+                    <h3><span>外观配置</span><i class="title_icon"></i></h3>
+                    <ul class="param_info">
+                        <li class="param_info_list"><span class="param_ctn">单排气管</span><i class="param_icon"></i></li>
+                        <li class="param_info_list"><span class="param_ctn">双排气管</span><i class="param_icon"></i></li>
+                        <li class="param_info_list param_info_h"><span class="param_ctn">单排气管</span><i class="param_icon"></i></li>
+                        <li class="param_info_list"><span class="param_ctn">双排气管</span><i class="param_icon"></i></li>
+                        <li class="param_info_list"><span class="param_ctn">双排气管</span><i class="param_icon"></i></li>
+                        <li class="param_info_list"><span class="param_ctn">双排气管</span><i class="param_icon"></i></li>
+                    </ul>
+                </div>
+                <div class="detail_box">
+                    <h3><span>外观配置</span><i class="title_icon"></i></h3>
+                    <ul class="param_info">
+                    <li class="param_info_list"><span class="param_ctn">单排气管</span><i class="param_icon"></i></li>
+                    <li class="param_info_list"><span class="param_ctn">双排气管</span><i class="param_icon"></i></li>
+                    <li class="param_info_list param_info_h"><span class="param_ctn">单排气管</span><i class="param_icon"></i></li>
+                    <li class="param_info_list"><span class="param_ctn">双排气管</span><i class="param_icon"></i></li>
+                    <li class="param_info_list"><span class="param_ctn">双排气管</span><i class="param_icon"></i></li>
+                    <li class="param_info_list"><span class="param_ctn">双排气管</span><i class="param_icon"></i></li>
+                </ul>
+                </div>
+
+            </div>
+            <!--车身配置-->
+            <div class="car_body_detail" style="display: none">
+                <div class="detail_box">
+                    <h3>安全性</h3>
+                    <ul class="config_info clear">
+                       <li class="config_info_list">
+                           多级激活逻辑的安全气囊。前置安全气囊、前后侧气囊和 各排座椅车窗气帘
+                       </li>
+                        <li class="config_info_list">制动辅助系统(BAS)</li>
+                        <li class="config_info_list">四轮驱动的电子牵引力系统(4ETS)</li>
+                        <li class="config_info_list">自适应制动器，带上坡起动帮助</li>
+                        <li class="config_info_list">预防性安全系统(PRE-SAFE )</li>
+                        <li class="config_info_list">注意力警示系统</li>
+                        <li class="config_info_list">大灯辅助装置，配有自动开启的行车灯</li>
+                        <li class="config_info_list">大LED日间行驶灯</li>
+                        <li class="config_info_list">后视镜组件(电子可折叠后视镜，带防眩目功能)</li>
+                        <li class="config_info_list">前排乘客碰撞响应式颈部保护头枕(NECK-PRO)</li>
+                        <li class="config_info_list">轮胎压力流失警告系统</li>
+                        <li class="config_info_list">中央门锁，发生碰撞时自动解锁所有车门并开启车内照明 和危险警示灯</li>
+                        <li class="config_info_list">电子防启动装置，包括带无线遥控和可视锁止验证功能的 锁止系统</li>
+                        <li class="config_info_list">前后排电动车窗带障碍传感器</li>
+                        <li class="config_info_list">主动保养提示系统（ASSYST）保养间隔指示器</li>
+                        <li class="config_info_list">ISOFIX儿童座椅固定装置</li>
+                        <li class="config_info_list">灭火器</li>
+                        <li class="config_info_list">备用轮胎</li>
+                    </ul>
+                </div>
+                <div class="detail_box">
+                    <h3>娱乐及通讯</h3>
+                    <ul class="config_info clear">
+                        <li class="config_info_list">Audio 20 CD收音机</li>
+                        <li class="config_info_list">Becker?地图导航(MAP PILOT)预留装置</li>
+                        <li class="config_info_list">蓝牙电话免提功能</li>
+                    </ul>
+                </div>
+                <div class="detail_box">
+                    <h3>安全性</h3>
+                    <ul class="config_info clear">
+                        <li class="config_info_list">
+                            多级激活逻辑的安全气囊。前置安全气囊、前后侧气囊和 各排座椅车窗气帘
+                        </li>
+                        <li class="config_info_list">制动辅助系统(BAS)</li>
+                        <li class="config_info_list">四轮驱动的电子牵引力系统(4ETS)</li>
+                        <li class="config_info_list">自适应制动器，带上坡起动帮助</li>
+                        <li class="config_info_list">预防性安全系统(PRE-SAFE )</li>
+                        <li class="config_info_list">注意力警示系统</li>
+                        <li class="config_info_list">大灯辅助装置，配有自动开启的行车灯</li>
+                        <li class="config_info_list">大LED日间行驶灯</li>
+                        <li class="config_info_list">后视镜组件(电子可折叠后视镜，带防眩目功能)</li>
+                        <li class="config_info_list">前排乘客碰撞响应式颈部保护头枕(NECK-PRO)</li>
+                        <li class="config_info_list">轮胎压力流失警告系统</li>
+                        <li class="config_info_list">中央门锁，发生碰撞时自动解锁所有车门并开启车内照明 和危险警示灯</li>
+                        <li class="config_info_list">电子防启动装置，包括带无线遥控和可视锁止验证功能的 锁止系统</li>
+                        <li class="config_info_list">前后排电动车窗带障碍传感器</li>
+                        <li class="config_info_list">主动保养提示系统（ASSYST）保养间隔指示器</li>
+                        <li class="config_info_list">ISOFIX儿童座椅固定装置</li>
+                        <li class="config_info_list">灭火器</li>
+                        <li class="config_info_list">备用轮胎</li>
+                    </ul>
+                </div>
+                <div class="detail_box">
+                    <h3>安全性</h3>
+                    <ul class="config_info clear">
+                        <li class="config_info_list">
+                            多级激活逻辑的安全气囊。前置安全气囊、前后侧气囊和 各排座椅车窗气帘
+                        </li>
+                        <li class="config_info_list">制动辅助系统(BAS)</li>
+                        <li class="config_info_list">四轮驱动的电子牵引力系统(4ETS)</li>
+                        <li class="config_info_list">自适应制动器，带上坡起动帮助</li>
+                        <li class="config_info_list">预防性安全系统(PRE-SAFE )</li>
+                        <li class="config_info_list">注意力警示系统</li>
+                        <li class="config_info_list">大灯辅助装置，配有自动开启的行车灯</li>
+                        <li class="config_info_list">大LED日间行驶灯</li>
+                        <li class="config_info_list">后视镜组件(电子可折叠后视镜，带防眩目功能)</li>
+                        <li class="config_info_list">前排乘客碰撞响应式颈部保护头枕(NECK-PRO)</li>
+                        <li class="config_info_list">轮胎压力流失警告系统</li>
+                        <li class="config_info_list">中央门锁，发生碰撞时自动解锁所有车门并开启车内照明 和危险警示灯</li>
+                        <li class="config_info_list">电子防启动装置，包括带无线遥控和可视锁止验证功能的 锁止系统</li>
+                        <li class="config_info_list">前后排电动车窗带障碍传感器</li>
+                        <li class="config_info_list">主动保养提示系统（ASSYST）保养间隔指示器</li>
+                        <li class="config_info_list">ISOFIX儿童座椅固定装置</li>
+                        <li class="config_info_list">灭火器</li>
+                        <li class="config_info_list">备用轮胎</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
+<script src="./js/zepto.js"></script>
+<script src="./js/vinresult.js"></script>

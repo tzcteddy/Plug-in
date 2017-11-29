@@ -1,0 +1,262 @@
+html{font-size:50px}
+body{
+    background: #eef3fa;
+    font-family: "PingFang";
+}
+h3{
+    position: relative;
+    line-height: 1rem;
+    font-size: 0.22rem;
+    font-weight: normal;
+    color:#4d83f9 ;
+}
+.main{
+    padding: 0 0.36rem;
+}
+.content{
+    margin: 0 auto;
+    padding: 0 0.28rem;
+    background: #fff;
+    border-radius: 0.1rem;
+    box-shadow: 0px 3px 24px -2px #e0eafa;
+    overflow: hidden;
+}
+dl{
+
+}
+dt{
+    margin-bottom: 0.14rem;
+    font-size: 0.22rem;
+    color: #737373;
+}
+dd{
+    font-size: 0.25rem;
+    font-weight: bold;
+    font-family: "DIN";
+    color: #000;
+}
+.header,.section{
+    margin-bottom: 0.18rem;
+}
+/*示例图引用背景图*/
+.header_content{position: relative}
+.example{position: absolute;top:0.1rem ;right:0.1rem ;width:1.97rem ;height:1.6rem;background: url('../../image/lanbenjia/vin_example.png') no-repeat;background-size: 100% 100%;z-index: 5}
+.num_1{background: url('../../image/lanbenjia/mo_1_icon_03.jpg') no-repeat;background-size: 10% 100%;background-position: 4.8rem center }
+.num_2{display:inline-block;width:0.64rem;height:0.32rem;background: url('../../image/lanbenjia/mo_2_icon_03.jpg') no-repeat;background-size: 100% 100%;background-position:center;vertical-align: middle}
+.num_3{display:inline-block;width:0.64rem;height:0.32rem;background: url('../../image/lanbenjia/mo_3_icon_03.jpg') no-repeat;background-size: 100% 100%;background-position:center;vertical-align: middle}
+/*示例图背景图结束*/
+.header .header_bg{
+    width: 100%;
+    height:2.79rem;
+    background: linear-gradient(to right,#4d83f9,#5da3fd);
+    text-align: center;
+    font-size: 0.3rem;
+    color: #fff;
+    font-family: "PingFang";
+}
+.header .header_bg .older_no{
+    display: inline-block;
+    padding:0.5rem 0;
+}
+.header .header_content{
+    margin-top: -1.4rem;
+}
+.header_info{
+    padding-bottom: 0.36rem;
+}
+.header .header_title{
+    padding:0.5rem 0 0.34rem;
+    text-align: center;
+    font-family: "PingFang";
+    color: #000;
+}
+.header .header_title .car_style{
+    margin-bottom: 0.18rem;
+    font-size: 0.3rem;
+    font-weight: bold;
+}
+.header .header_title .car_desc{
+    margin-bottom: 0.4rem;
+    font-size: 0.28rem;
+}
+.header .header_title .car_vin{
+    font-size:0.3rem ;
+    font-weight: bold;
+    font-family: "DIN";
+}
+.header .header_info_list{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.header .header_model{
+    margin-top: 0.5rem;
+    padding-bottom: 0.34rem;
+    text-align: center;
+}
+.main_title{
+    padding: 0.33rem 0 0.6rem;
+    font-size:0.34rem ;
+    color:#4d83f9 ;
+}
+.section_info{/*修改*/
+    text-align: left;
+    width: 6.48rem;
+    -webkit-transform: translateX(-0.3rem);
+    -moz-transform: translateX(-0.3rem);
+    -ms-transform: translateX(-0.3rem);
+    -o-transform: translateX(-0.3rem);
+    transform: translateX(-0.3rem);
+}
+.base_info .section_info_list{
+    width: 28%;
+}
+.section_info_list{/*修改*/
+    display: inline-block;
+    /*float: left;*/
+    padding-left: 0.25rem;
+    margin-bottom: 0.55rem;
+    /*min-width: 28%;*/
+    /*  max-width: 100%;*/
+    border-left: 1px solid #f1f1f1;
+    text-align: left;
+    vertical-align: top;
+}
+.price_direct{
+    padding: 0.25rem 0;
+    border-bottom: 1px solid #f2f2f2;
+}
+.price_direct:nth-last-child(1){
+    border: none;
+}
+.price_direct .dt{
+    float: left;
+    font-size: 0.22rem;
+    color: #737373;
+}
+.price_direct .dd{
+    float: right;
+    font-size: 0.27rem;
+    color: #000;
+    font-weight: bold;
+}
+.select_title{
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+}
+.config{
+    display: inline-block;
+    padding-bottom: 0.36rem;
+    text-align: center;
+    color: #737373;
+}
+.main_title .active{
+    border-bottom: 0.03rem solid #4d83f9;
+    color:#4d83f9 ;
+}
+.detail_box{
+    padding: 0 0.2rem;
+    overflow: hidden;
+}
+.detail_box .config_info{
+    display: -webkit-flex;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+
+    justify-content:flex-start;
+    align-items:center;
+    align-content:flex-start;
+    overflow: hidden;
+}
+.detail_box .config_info_list{
+    padding: 0 0.2rem 0 0.2rem;
+    border-left: 2px solid #ededed;
+    margin-bottom: 0.16rem;
+    line-height: 0.42rem;
+    font-size: 0.23rem;
+    color: #737373;
+    -webkit-transform: translateX(-0.04rem);
+    -moz-transform: translateX(-0.04rem);
+    -ms-transform: translateX(-0.04rem);
+    -o-transform: translateX(-0.04rem);
+    transform: translateX(-0.04rem);
+}
+.detail_box .title_icon{
+    position: absolute;
+    top: 0.45rem;
+    right: 0.05rem;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 0.1rem solid transparent;
+    border-left-color:#4d83f9;
+    transform: rotate(90deg);
+}
+.detail_box_active .title_icon{
+    top: 0.35rem;
+    transform: rotate(-90deg);
+}
+.detail_box .param_info{
+    transition: all 0.3s linear 0s;
+    height: 0;
+    overflow: hidden;
+}
+.detail_box .param_info_list{
+    position: relative;
+    line-height: 0.6rem;
+    font-size: 0.23rem;
+    border-bottom: 1px solid #ededed;
+    color: #000;
+}
+.param_label .label_list{
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+.param_label .label_text{
+    margin-left: 0.18rem;
+    color: #cbcbcb;
+    vertical-align: middle;
+}
+.param_label .label_icon1,.detail_box .param_info_list .param_icon{
+    display: inline-block;
+    width: 0.21rem;
+    height: 0.21rem;
+    background: #000;
+    border-radius:50% ;
+    vertical-align: middle;
+}
+.detail_box .param_info_list .param_icon{
+    position: absolute;
+    top: 0.19rem;
+    right: 0.05rem;
+}
+.detail_box .param_info_h,.detail_box .param_info_w {
+    color: #cbcbcb;
+}
+.param_label .label_icon2,.detail_box .param_info_h .param_icon{
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.06rem;
+    background: #d2d2d2;
+    border-radius: 0.03rem;
+}
+.detail_box .param_info_h .param_icon{
+    position: absolute;
+    top: 0.27rem;
+    right: 0;
+}
+.param_label .label_icon3,.detail_box .param_info_w .param_icon{
+    display: inline-block;
+    width: 0.38rem;
+    height: 0.38rem;
+    background: url("../../image/lanbenjia/wenhao.png") no-repeat;
+    background-size: 100% 100%;
+    vertical-align:middle;
+}
+.detail_box .param_info_w .param_icon{
+    position: absolute;
+    top: 0.1rem;
+    right: 0;
+}

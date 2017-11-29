@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>维保结果开发</title>
+    <link rel="stylesheet" href="http://static.csiautos.cn/m/iautos/dist/css/lanbenjia/reset.css">
+    <link rel="stylesheet" href="http://static.csiautos.cn/m/iautos/dist/css/lanbenjia/weiresult.css">
+    <!--<link rel="stylesheet" href="./css/weiresult.css">-->
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize =50 * (clientWidth / 375) + 'px';
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</head>
+<body>
+<header class="header">
+    <div class="header_bg">
+        <span class="older_no">订单编号：654568</span>
+    </div>
+    <div class="main">
+        <div class="content header_content">
+            <div class="header_title">
+                <div class="car_desc">3.0-A/MT动感天窗型 四驱 节能版 京Ⅴ(国Ⅳ)</div>
+                <div class="car_vin">VIN：LVHRR7894F5001262</div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="container" style="display: block">
+    <div class="container-main container-main-content">
+        <div class="car-main-msg msg-shadow">
+            <ul class="car-msg">
+                <li class="maintenance-list">
+                    <div class="time-title"><i class="cir-icon"></i><span class="time-icon">2016-06-01</span></div>
+                    <div class="maintenance-box clear">
+                        <div class="maintenance-series">
+                            <div class="maintenance-wrap"><span class="maintenance-title">公里</span><span class="maintenance-ctn maintenance-li">6341</span></div>
+                            <div class="maintenance-wrap"><span class="maintenance-title ">类型</span><span class="maintenance-ctn">客户自费，现结</span></div>
+                            <div class="maintenance-wrap clear"><span class="maintenance-title float">项目</span><span class="maintenance-ctn float maintenance-width">客户反应，遥控钥匙失效，不能上锁解锁 和启动车辆，请检查。</span></div>
+                            <div class="maintenance-wrap clear"><span class="maintenance-title float">材料</span><span class="maintenance-ctn float">客户反应</span></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="maintenance-list">
+                    <div class="time-title"><i class="cir-icon"></i><span class="time-icon">2016-06-01</span></div>
+                    <div class="maintenance-box clear">
+                        <div class="maintenance-series">
+                            <div class="maintenance-wrap"><span class="maintenance-title">公里</span><span class="maintenance-ctn maintenance-li">6341</span></div>
+                            <div class="maintenance-wrap"><span class="maintenance-title ">类型</span><span class="maintenance-ctn">客户自费，现结</span></div>
+                            <div class="maintenance-wrap clear"><span class="maintenance-title float">项目</span><span class="maintenance-ctn float maintenance-width">客户反应，遥控钥匙失效，不能上锁解锁 和启动车辆，请检查。</span></div>
+                            <div class="maintenance-wrap clear"><span class="maintenance-title float">材料</span><span class="maintenance-ctn float">客户反应</span></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="maintenance-list">
+                    <div class="time-title"><i class="cir-icon"></i><span class="time-icon">2016-06-01</span></div>
+                    <div class="maintenance-box clear">
+                        <div class="maintenance-series">
+                            <div class="maintenance-wrap"><span class="maintenance-title">公里</span><span class="maintenance-ctn maintenance-li">6341</span></div>
+                            <div class="maintenance-wrap"><span class="maintenance-title ">类型</span><span class="maintenance-ctn">客户自费，现结</span></div>
+                            <div class="maintenance-wrap clear"><span class="maintenance-title float">项目</span><span class="maintenance-ctn float maintenance-width">客户反应，遥控钥匙失效，不能上锁解锁 和启动车辆，请检查。</span></div>
+                            <div class="maintenance-wrap clear"><span class="maintenance-title float">材料</span><span class="maintenance-ctn float">客户反应</span></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="maintenance-list">
+                    <div class="time-title"><i class="cir-icon"></i><span class="time-icon">2016-06-01</span></div>
+                    <div class="maintenance-box clear">
+                        <div class="maintenance-series">
+                            <div class="maintenance-wrap"><span class="maintenance-title">公里</span><span class="maintenance-ctn maintenance-li">6341</span></div>
+                            <div class="maintenance-wrap"><span class="maintenance-title ">类型</span><span class="maintenance-ctn">客户自费，现结</span></div>
+                            <div class="maintenance-wrap clear"><span class="maintenance-title float">项目</span><span class="maintenance-ctn float maintenance-width">客户反应，遥控钥匙失效，不能上锁解锁 和启动车辆，请检查。</span></div>
+                            <div class="maintenance-wrap clear"><span class="maintenance-title float">材料</span><span class="maintenance-ctn float">客户反应</span></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--暂无该VIN的维修保养数据-->
+<section class="container" style="display: block">
+    <div class="container-main no-vin">
+        <div class="no-vin-img"></div><p class="no-vin-text">抱歉，暂无该VIN的维修保养数据</p><p class="no-vin-text">查询次数已退还</p>
+    </div>
+</section>
+<!--该车未在4S点进行维修保养-->
+<section class="container" style="display: block">
+    <div class="container-main no-vin">
+        <div class="no-vin-img"></div><p class="no-vin-text">该车未在4S点进行维修保养</p>
+    </div>
+</section>
+<!--加载失败-->
+<section class="container" style="display: block">
+    <div class="container-main no-vin">
+        <div class="no-load-img"></div><p class="no-vin-text">加载失败</p><p class="try-again" onclick=window.location.reload()>再试一次</p>
+    </div>
+</section>
+<!--记录生成中-->
+<section class="container" style="display: block">
+    <div class="container-main wait">
+        <div class="wait-img"><div class="dashed"><div class="solid"></div></div></div><div class="wait-shadow"></div><p class="wait-text-top">记录生成中...</p><p class="wait-text-bottom">请耐心等待</p>
+    </div>
+</section>
+</body>
+</html>
