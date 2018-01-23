@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+/*------容器-------*/
+#level{
+    padding-top: 36px;
+}
+/*-------标题----------*/
+#level .level-title{
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #82939d;
+}
+/*----------选择大区--------------*/
+#level .level-choose{
+    position: relative;
+    width: 360px;
+    height: 36px;
+    border: 1px solid #e9eef2;
+    border-top: 2px solid #e9eef2;
+    border-radius: 5px;
+    background: #f4f5f7;
+}
+/*----------模拟输入框-------------*/
+#level .level-choose .level-input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 10px;
+    width: 360px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    color: #b0bac2;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+/*--------选则后输入框内字体颜色-------------*/
+#level .level-choose .level-input-active{
+    color: #50646f;
+}
+#level .level-choose .level-input{
+
+}
+/*-----------展开区域-------------------*/
+#level .level-choose .level-area{
+    position: absolute;
+    top: 40px;
+    left: -1px;
+    padding: 10px 0;
+    width: 360px;
+    height: 430px;
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+/*--------展开区域内文档----------*/
+#level .level-choose .level-content{
+    padding: 10px 0;
+}
+/*--------列表内文本-----------*/
+#level .level-content .level-ctn{
+    height: 36px;
+    line-height: 36px;
+}
+/*-----------鼠标滑过列表内文本背景----------------*/
+#level .level-content .level-ctn:hover{
+    background: #f2f6f9;
+    cursor: pointer;
+}
+/*-----------选中后列表内文本背景----------------*/
+#level .level-content .level-ctn-active,.content .choose .choose-ctn-active:hover{
+    background: #e7ebee;
+}
+/*-----------文本文字----------------*/
+#level .level-content .level-text{
+    margin-right: 8px;
+    font-size: 14px;
+    color: #333333;
+}
+/*------展开列的图标------*/
+#level .level-content .level-icon{
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border: 6px solid transparent;
+}
+#level .level-content .level-show-icon{
+    border-top-color: #000;
+}
+/*------收起列的图标------*/
+#level .level-content .level-hide-icon{
+    border-left-color: #ccc;
+}
+/*------收起列的图标鼠标滑过------*/
+#level .level-content .level-hide-icon:hover{
+    border-left-color: #2dc9f9;
+}
+/*---------层级列表------------*/
+#level .level-content .level-list{
+    line-height: 36px;
+}
+/*----------列表前图标-------------*/
+#level .level-content .level-folder{
+    margin-right: 8px;
+    font-family: aiche;
+    color: #9cb9e3;
+}
+/*-----------内层盒子-------------*/
+#level .level-content .level-box{
+    display: block;
+    /*padding-left: 18px;*/
+    box-sizing: border-box;
+}

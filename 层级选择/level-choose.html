@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>层级选择</title>
+    <link rel="stylesheet" href="./level-choose.css">
+</head>
+<body>
+ <div id="level">
+     <p class="level-title">选择部门</p>
+     <div class="level-choose">
+         <span class="level-input" id="level-input" selected-id="">请选择</span>
+         <div class="level-area" id="level-area" style="display: block">
+             <div class="level-content" id="level-content">
+                 <ul class="level-container" id="level-container">
+                     <li class="level-list">
+                         <p class="level-ctn"><i class="level-folder"></i><span class="level-text"></span><i class="level-icon"></i></p>
+                         <ul class="level-box">
+
+                         </ul>
+                     </li>
+                 </ul>
+             </div>
+         </div>
+     </div>
+ </div>
+</body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/level-choose.js"></script>
+<script>
+    var result={
+        "status": true,
+        "data": {
+            "data": [
+                {
+                    "id": 0,
+                    "name": "中国",
+                    "children": [
+                        {
+                            "id": 17,
+                            "name": "商务部",
+                            "children": [
+                                {
+                                    "id": 18,
+                                    "name": "纪律组",
+                                    "children": [
+                                        {
+                                            "id": 19,
+                                            "name": "纪律组一",
+                                            "children": []
+                                        },
+                                    ]
+                                },
+                                {
+                                    "id": 20,
+                                    "name": "谈判组",
+                                    "children": [
+                                        {
+                                            "id": 21,
+                                            "name": "谈判组一",
+                                            "children": []
+                                        },
+                                    ]
+                                },
+                            ]
+                        },
+                        {
+                            "id": 22,
+                            "name": "外交部",
+                            "children": [
+                                {
+                                    "id": 23,
+                                    "name": "纪律组",
+                                    "children": [
+                                        {
+                                            "id": 25,
+                                            "name": "纪律组一",
+                                            "children": []
+                                        },
+                                        {
+                                            "id": 26,
+                                            "name": "纪律组二",
+                                            "children": []
+                                        },
+                                    ]
+                                },
+                                {
+                                    "id": 27,
+                                    "name": "谈判组",
+                                    "children": [
+                                        {
+                                            "id": 28,
+                                            "name": "谈判组一",
+                                            "children": []
+                                        },
+                                        {
+                                            "id": 29,
+                                            "name": "谈判组二",
+                                            "children": []
+                                        },
+                                        {
+                                            "id": 30,
+                                            "name": "谈判组三",
+                                            "children": []
+                                        },
+                                    ]
+                                },
+                            ]
+                        },
+                        {
+                            "id": 31,
+                            "name": "法务部",
+                            "children": [
+                                {
+                                    "id": 32,
+                                    "name": "纪律组",
+                                    "children": []
+                                },
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "msg": ""
+    };
+    var data=result.data.data;
+   var level = new LevelChoose({
+        container:"",
+        title:"选择",
+        paddingLeft:"",
+        selectedId:''
+    });
+    level.getData(data)
+</script>
