@@ -1,6 +1,13 @@
 /**
  * Created by tianzhicun on 2018/1/23.
  */
+/*
+* @params:{}
+*   @params:container    //容器 默认：‘level’
+*   @params:title        //头部标题
+*   @params:selectedId   //
+*   @params:paddingLeft  //每层左侧间距 默认：‘18’
+*   */
 var LevelChoose=function (options) {
     this.container=options.container||$("#level");
     this.title=options.title;
@@ -23,7 +30,11 @@ LevelChoose.prototype={
         baseEleStr+='</div></div></div>';
         self.container.html(baseEleStr);
     },
-    /*递归计算每级选项的padding-left*/
+
+    /*递归计算每级选项的padding-left
+    * @params:$ele:当前层级
+    * @params:paddingLeft:每级左边距的距离
+    * @params:n:当前层级-1,用于计算当前级的左边距*/
     countPadding: function ($ele, paddingLeft, n) {
         var self=this;
         //寻找第一层下是否有第二层
@@ -40,13 +51,15 @@ LevelChoose.prototype={
             })
         }
     },
-    //循环第一级并执行赋值padding
+    //事件执行函数：循环第一级并执行赋值padding
     assignPadding:function (index, item) {
         var self=this;
         $(item).children(".level-ctn").css("padding", "0 10px");
         self.countPadding($(item), self.paddingLeft, 0);
     },
     //选中效果切换
+    /*@params:activeAry:已选中元素数组
+    * @params:className:选中后要添加的类名*/
     selectedSwitch: function (activeAry, className) {
         if (activeAry.length <= 0) {
             activeAry.push($(this));
