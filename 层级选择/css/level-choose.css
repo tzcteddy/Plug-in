@@ -5,9 +5,24 @@
 ul,li{
     list-style: none;
 }
+i{
+    font-style: normal;
+}
+@font-face {
+    font-family: 'aiche';
+    src: url('../public/font/fontello.eot');
+    src: url('../public/font/fontello.eot#iefix') format('embedded-opentype'),
+    url('../public/font/fontello.woff') format('woff'),
+    url('../public/font/fontello.ttf') format('truetype'),
+    url('../public/font/fontello.svg#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 /*------容器-------*/
 #level{
     padding-top: 36px;
+    width: 360px;
+    margin: auto;
 }
 /*-------标题----------*/
 #level .level-title{
@@ -92,11 +107,11 @@ ul,li{
     border: 6px solid transparent;
 }
 #level .level-content .level-show-icon{
-    border-top-color: #000;
+    border-top-color: #2dc9f9;
 }
 /*------收起列的图标------*/
 #level .level-content .level-hide-icon{
-    border-left-color: #ccc;
+    border-left-color: #2dc9f9;
 }
 /*------收起列的图标鼠标滑过------*/
 #level .level-content .level-hide-icon:hover{

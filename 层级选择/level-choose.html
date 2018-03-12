@@ -3,27 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>层级选择</title>
-    <link rel="stylesheet" href="./level-choose.css">
+    <link rel="stylesheet" href="./css/level-choose.css">
 </head>
 <body>
- <div id="level">
-     <p class="level-title">选择部门</p>
-     <div class="level-choose">
-         <span class="level-input" id="level-input" selected-id="">请选择</span>
-         <div class="level-area" id="level-area" style="display: block">
-             <div class="level-content" id="level-content">
-                 <ul class="level-container" id="level-container">
-                     <li class="level-list">
-                         <p class="level-ctn"><i class="level-folder"></i><span class="level-text"></span><i class="level-icon"></i></p>
-                         <ul class="level-box">
-
-                         </ul>
-                     </li>
-                 </ul>
-             </div>
-         </div>
-     </div>
- </div>
+ <div id="level"></div>
 </body>
 </html>
 <script src="js/jquery.min.js"></script>
@@ -128,9 +111,9 @@
     var data=result.data.data;
    var level = new LevelChoose({
         container:"",
-        title:"选择",
-        paddingLeft:"",
-        selectedId:''
+        title:"选择部门吧",
+        paddingLeft:"18",
+        selectedId:'18'
     });
     level.getData(data)
 </script>

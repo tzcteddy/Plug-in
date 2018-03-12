@@ -1,7 +1,7 @@
 /**
  * Created by tianzhicun on 2018/1/23.
  */
-/*
+/**
 * @param:{}
 *   @param :container    //容器 默认：‘level’
 *   @param :title        //头部标题
@@ -21,7 +21,7 @@ LevelChoose.prototype={
     initBaseElement:function () {
         var self=this;
         var baseEleStr='';
-        baseEleStr+=' <p class="level-title">选择部门</p>';
+        baseEleStr+=' <p class="level-title">'+this.title+'</p>';
         baseEleStr+='<div class="level-choose">';
         baseEleStr+='<span class="level-input" id="level-input" selected-id="'+self.selectedId+'">'+self.title+'</span>';
         baseEleStr+='<div class="level-area" id="level-area" style="display: block">';
@@ -31,7 +31,7 @@ LevelChoose.prototype={
         self.container.html(baseEleStr);
     },
 
-    /*递归计算每级选项的padding-left
+    /**递归计算每级选项的padding-left
     * @param :$ele:当前层级
     * @param :paddingLeft:每级左边距的距离
     * @param :n:当前层级-1,用于计算当前级的左边距*/
@@ -58,8 +58,11 @@ LevelChoose.prototype={
         self.countPadding($(item), self.paddingLeft, 0);
     },
     //选中效果切换
-    /*@param :activeAry:已选中元素数组
-    * @param :className:选中后要添加的类名*/
+    /**
+     * @param :activeAry:已选中元素数组
+     * @param :className:选中后要添加的类名
+     * */
+
     selectedSwitch: function (activeAry, className) {
         if (activeAry.length <= 0) {
             activeAry.push($(this));
@@ -95,7 +98,7 @@ LevelChoose.prototype={
             if (self.isShow($levelBox)) {
                 $levelBox.hide().find(".level-box").hide();
                 $levelBox.find(".level-icon").removeClass("level-show-icon").addClass("level-hide-icon");
-                $(this).children(".level-icon").removeClass("level-hide-icon").addClass("level-show-icon");
+                $(this).children(".level-icon").removeClass("level-show-icon").addClass("level-hide-icon");
                 if($("#level-box").height()<430){
                     //$(".iScrollVerticalScrollbar").remove()
                 }
@@ -135,7 +138,7 @@ LevelChoose.prototype={
             str+='</p>';
             if(data[i].children.length>0){
                 str+='<ul class="level-box" style="display: none">';
-                str=self.elementStr((data[i].children),str);
+                str=self.elementStr((data[i].children),str);//递归拼接字符串
                 str+='</ul>';
             }
             str+='</li>';
