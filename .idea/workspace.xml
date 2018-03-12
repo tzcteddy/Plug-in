@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc1b4f9b-834e-4e02-9eec-845978b6c208" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/层级选择/level-choose.css" afterPath="$PROJECT_DIR$/层级选择/css/level-choose.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/层级选择/js/level-choose.js" afterPath="$PROJECT_DIR$/层级选择/js/level-choose.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/层级选择/level-choose.html" afterPath="$PROJECT_DIR$/层级选择/level-choose.html" />
@@ -29,16 +27,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="level-choose.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="level-choose.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/层级选择/js/level-choose.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-825">
-              <caret line="23" column="59" lean-forward="false" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+            <state relative-caret-position="429">
+              <caret line="187" column="18" lean-forward="false" selection-start-line="187" selection-start-column="18" selection-end-line="187" selection-end-column="18" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <marker date="1520849123550" expanded="true" signature="900:914" ph="..." />
-                <marker date="1520849123550" expanded="true" signature="5151:5164" ph="..." />
+                <marker date="1520849888040" expanded="true" signature="900:914" ph="..." />
+                <marker date="1520849888040" expanded="true" signature="5151:5164" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/层级选择/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -47,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/缩略图/js/thumbnail.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="594">
-              <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+              <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -56,8 +64,8 @@
       <file leaf-file-name="level-choose.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/层级选择/level-choose.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="114" column="23" lean-forward="false" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
+            <state relative-caret-position="594">
+              <caret line="113" column="22" lean-forward="true" selection-start-line="113" selection-start-column="22" selection-end-line="113" selection-end-column="22" />
               <folding>
                 <element signature="e#312#4237#0" expanded="false" />
               </folding>
@@ -68,7 +76,7 @@
       <file leaf-file-name="level-choose.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/层级选择/css/level-choose.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
+            <state relative-caret-position="726">
               <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
               <folding />
             </state>
@@ -90,9 +98,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/层级选择/css/level-choose.css" />
+        <option value="$PROJECT_DIR$/层级选择/README.md" />
         <option value="$PROJECT_DIR$/层级选择/js/level-choose.js" />
         <option value="$PROJECT_DIR$/层级选择/level-choose.html" />
-        <option value="$PROJECT_DIR$/层级选择/css/level-choose.css" />
       </list>
     </option>
   </component>
@@ -123,6 +132,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -149,46 +159,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plug-in" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plug-in" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="层级选择" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plug-in" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plug-in" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="层级选择" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,18 +295,19 @@
       <updated>1520759988922</updated>
       <workItem from="1520759990807" duration="4039000" />
       <workItem from="1520775806572" duration="162000" />
-      <workItem from="1520846512783" duration="2717000" />
+      <workItem from="1520846512783" duration="3053000" />
+      <workItem from="1520849607971" duration="1020000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6918000" />
+    <option name="totallyTimeSpent" value="8274000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12697576" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1264489" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -372,12 +346,50 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/层级选择/js/level-choose.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1520849888040" expanded="true" signature="900:914" ph="..." />
+            <marker date="1520849888040" expanded="true" signature="5151:5164" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/缩略图/js/thumbnail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/层级选择/level-choose.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="114" column="23" lean-forward="false" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
+          <folding>
+            <element signature="e#312#4237#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/层级选择/css/level-choose.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/层级选择/js/level-choose.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6600">
           <caret line="202" column="1" lean-forward="false" selection-start-line="202" selection-start-column="1" selection-end-line="202" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <marker date="1520849123550" expanded="true" signature="900:914" ph="..." />
-            <marker date="1520849123550" expanded="true" signature="5151:5164" ph="..." />
+            <marker date="1520849888040" expanded="true" signature="900:914" ph="..." />
+            <marker date="1520849888040" expanded="true" signature="5151:5164" ph="..." />
           </folding>
         </state>
       </provider>
@@ -406,8 +418,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <marker date="1520849123550" expanded="true" signature="900:914" ph="..." />
-            <marker date="1520849123550" expanded="true" signature="5151:5164" ph="..." />
+            <marker date="1520849888040" expanded="true" signature="900:914" ph="..." />
+            <marker date="1520849888040" expanded="true" signature="5151:5164" ph="..." />
           </folding>
         </state>
       </provider>
@@ -463,53 +475,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="633">
           <caret line="38" column="10" lean-forward="false" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/层级选择/public/js/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/层级选择/public/js/header.js" />
     <entry file="file://$PROJECT_DIR$/层级选择/css/level-choose.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="726">
           <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/层级选择/level-choose.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="114" column="23" lean-forward="false" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
-          <folding>
-            <element signature="e#312#4237#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/缩略图/js/thumbnail.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
-          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/层级选择/js/level-choose.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-825">
-          <caret line="23" column="59" lean-forward="false" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+        <state relative-caret-position="429">
+          <caret line="187" column="18" lean-forward="false" selection-start-line="187" selection-start-column="18" selection-end-line="187" selection-end-column="18" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <marker date="1520849123550" expanded="true" signature="900:914" ph="..." />
-            <marker date="1520849123550" expanded="true" signature="5151:5164" ph="..." />
+            <marker date="1520849888040" expanded="true" signature="900:914" ph="..." />
+            <marker date="1520849888040" expanded="true" signature="5151:5164" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/层级选择/level-choose.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="113" column="22" lean-forward="true" selection-start-line="113" selection-start-column="22" selection-end-line="113" selection-end-column="22" />
+          <folding>
+            <element signature="e#312#4237#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/层级选择/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

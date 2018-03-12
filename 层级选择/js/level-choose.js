@@ -185,7 +185,7 @@ LevelChoose.prototype={
         if(data){
             $levelContainer.html(self.elementStr(data,""));
             if(self.selectedId!=="0"){
-                self.showSelected(self.selectedId);
+                //self.showSelected(self.selectedId);
             }
             var $FirstList = $("#level-container").children(".level-list");
             $FirstList.each(self.assignPadding.bind(self));
