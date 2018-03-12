@@ -138,4 +138,3 @@ Thumbnail.prototype={
         this.drag(this.$bannerList);
     }
 };
-new Thumbnail();
