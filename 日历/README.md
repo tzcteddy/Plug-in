@@ -1,9 +1,11 @@
 ##日历
 
+
 ###对象方法
 + Calendar.year
-+ Calendar.mongth
-+ Calendar.selectMonth true/false
++ Calendar.month
++ Calendar.selectMonth true：选择month的状态；false：选择day的状态
++ Calendar.isClose true:非选择状态；false:选择状态
 + Calendar.colors
 ```
 {
@@ -21,3 +23,13 @@
 
 ###实例上的方法
 calendar.draw()重绘日期内容
+calendar.close()关闭选择框
+
+###初始化
+```
+new Calendar({
+  panle:"panle",              //页面容器的id
+  inputBox:"inputBox",        //页面input框的id
+  selectedDate:"2018-08-08"   //已选中的时间，可有可无
+})
+```

@@ -10,9 +10,9 @@
     </style>
 </head>
 <body>
-<input style="margin-bottom:10px;width: 200px;height: 26px;line-height: 26px;background:#99AFD6;border: none" type="text" id="time" readonly>
+<input style="margin-bottom:10px;width: 200px;height: 26px;line-height: 26px;background:#99AFD6;border: none" type="text" id="time" value="2022-02-02" readonly>
  <div id="calendarPanel">
-     <div name="calendarForm" style="border-radius: 3px;overflow: hidden">
+   <!--  <div name="calendarForm" style="border-radius: 3px;overflow: hidden">
          <table style="width: 100%;" cellspacing="0">
              <tbody>
              <tr style="height:26px;line-height: 26px;text-align: center;color: #fff">
@@ -112,8 +112,18 @@
              </tr>
              </tbody>
          </table>
-     </div>
+     </div>-->
  </div>
 </body>
 </html>
 <script src="data.js"></script>
+<script>
+    var inputBox=document.getElementById("time");
+    inputBox.onclick=function () {
+        var calendar=new Calendar({
+            inputBox:"time",
+            selectedDate:document.getElementById("time").value
+        });
+        calendar.draw();
+    }
+</script>

@@ -17,20 +17,31 @@
 
     function Calendar(options) {
 
-        this.panel = document.getElementById((options&&options.calendar)||"calendarPanel");
+        this.panel =options.panel ? document.getElementById(options.panel) : document.getElementById("calendarPanel");
+        this.inputBox=document.getElementById(options.inputBox);
+        console.log(this.inputBox);
+        this.selectedDate=options&&options.selectedDate;
+
         this.selectMonth=false;
+        this.isClose=true;
 
         this.date = new Date();
         this.year = this.date.getFullYear();
         this.month = this.date.getMonth();
-
-
-        this.day = this.date.getDate();
+        this.day =this.date.getDate();
         this.week = this.date.getDay();
 
-        this.selectedYear=null;
-        this.selectedMonth=null;
-        this.selectedDay=null;
+        this.selected=function(selectedDate){
+            var calendar=this;
+            if(selectedDate=="")return;
+            var dateAry = selectedDate.split("-");
+            calendar.year=calendar.selectedYear = parseFloat(dateAry[0]);
+            calendar.month=calendar.selectedMonth = parseFloat(dateAry[1]);
+            calendar.month=calendar.selectedMonth-1;
+            calendar.day=calendar.selectedDay = parseFloat(dateAry[2]);
+        };
+        this.selected(this.selectedDate);
+
 
         /*this.newMonth=this.month==11?0:this.month+1;
         this.firstDay=new Date(this.year,this.month,1);//获取当前月第一天
@@ -59,6 +70,7 @@
         };
 
 
+
     };
     Calendar.prototype.getDayAry=function () {
         var calendar = this;
@@ -82,10 +94,10 @@
         }
         return dayAry;
 
-    }
+    };
     Calendar.prototype.draw = function () {
            var calendar = this;
-
+           calendar.isClose=false;
            var strAry = [];
         /*标题table*/
            strAry[strAry.length] = '<div class="calendarForm" style="border-radius: 3px;overflow: hidden">';
@@ -117,14 +129,14 @@
                   for(var j=0;j<3;j++){
                       strAry[strAry.length] = '<td ';
                       if((index==new Date().getMonth())&&(calendar.year==new Date().getFullYear())){
-                          if((index==calendar.selectedMonth)&&(calendar.year==calendar.selectedYear)){
-                              strAry[strAry.length] = 'style="background-color:'+calendar.colors.select_hover+';color:'+calendar.colors.cur_font_color+';cursor: pointer;">';
+                          if((index==calendar.selectedMonth-1)&&(calendar.year==calendar.selectedYear)){
+                              strAry[strAry.length] = 'style="color:#fff;background-color:'+calendar.colors.select_hover+';color:'+calendar.colors.cur_font_color+';cursor: pointer;">';
                           }else {
                               strAry[strAry.length] = 'style="color:'+calendar.colors.cur_font_color+';cursor: pointer">';
                           }
                       }else {
-                          if((index==calendar.selectedMonth)&&(calendar.year==calendar.selectedYear)){
-                              strAry[strAry.length] = 'style="background-color:'+calendar.colors.select_hover+';cursor: pointer;">';
+                          if((index==calendar.selectedMonth-1)&&(calendar.year==calendar.selectedYear)){
+                              strAry[strAry.length] = 'style="color:#fff;background-color:'+calendar.colors.select_hover+';cursor: pointer;">';
                           }else {
                               strAry[strAry.length] = 'style="cursor: pointer;">';
                           }
@@ -146,7 +158,7 @@
               }
               strAry[strAry.length] = '</tr></thead>';
               /*@填充时间*/
-              strAry[strAry.length] = '<tbody style="text-align: center;font-size: 14px;">';
+              strAry[strAry.length] = '<tbody style="line-height: 24px;text-align: center;font-size: 14px;">';
               // TODO
               var dayAry = calendar.getDayAry();
 
@@ -155,16 +167,16 @@
                       for(var j=0;j<7;j++){
                           strAry[strAry.length] = '<td ';
                           //非本月的字体颜色
-                          if((i==0&&dayAry[7*i+j]>20)||i>=4&&dayAry[7*i+j]<13){
+                          if((i==0&&dayAry[7*i+j]>20)||i>=4&&dayAry[7*i+j]<=14){
                               strAry[strAry.length] = 'style="color: '+calendar.colors.time_out_color+';';
                           }else {
                               strAry[strAry.length] ='data-id="'+dayAry[7*i+j]+'" style="cursor:pointer;';
-                              if((dayAry[7*i+j]==calendar.day)&&(calendar.month==new Date().getMonth())&&(calendar.year==new Date().getFullYear())){
+                              if((dayAry[7*i+j]==new Date().getDate())&&(calendar.month==new Date().getMonth())&&(calendar.year==new Date().getFullYear())){
                                   //今天的字体颜色
                                   strAry[strAry.length] = 'color:'+calendar.colors.cur_font_color+';';
                               }
-                              if((dayAry[7*i+j]==calendar.selectedDay)&&(calendar.month==calendar.selectedMonth)&&(calendar.year==calendar.selectedYear)){
-                                  strAry[strAry.length] = 'background-color:'+calendar.colors.select_hover+';';
+                              if((dayAry[7*i+j]==calendar.selectedDay)&&(calendar.month==calendar.selectedMonth-1)&&(calendar.year==calendar.selectedYear)){
+                                  strAry[strAry.length] = 'color:#fff;background-color:'+calendar.colors.select_hover+';';
                               }
                           }
 
@@ -182,8 +194,8 @@
           /*底部table*/
         strAry[strAry.length] = '<table style="width: 100%" cellspacing="0"><tbody>';
         strAry[strAry.length] = '<tr style="height: 22px;line-height:22px;background: '+calendar.colors.title_bg+';text-align: center;color:'+calendar.colors.bar_font_color+'">';
-        strAry[strAry.length] = '<td style="width: 50%;cursor: pointer">今天</td>';
-        strAry[strAry.length] = '<td style="width: 50%;cursor: pointer">清除</td>';
+        strAry[strAry.length] = '<td class="s-today" style="width: 50%;cursor: pointer">今天</td>';
+        strAry[strAry.length] = '<td class="s-clear" style="width: 50%;cursor: pointer">清除</td>';
         strAry[strAry.length] = '</tr>';
         strAry[strAry.length] = '</tbody></table>';
         strAry[strAry.length] = '</div>';
@@ -226,17 +238,19 @@
                 dataTd[i].index=i;
                 dataTd[i].onmouseover=function () {
                     this.style.backgroundColor=calendar.colors.select_hover;
+                    this.style.color="#fff";
                 };
                 dataTd[i].onmouseout=function () {
                     this.style.backgroundColor="transparent";
+                    this.style.color="#000";
                 };
                 dataTd[i].onclick=function () {
                     calendar.selectMonth=false;
                     calendar.month=this.index;
 
                     calendar.selectedYear=calendar.year;
-                    calendar.selectedMonth=calendar.month;
-
+                    calendar.selectedMonth=calendar.month+1;
+                    calendar.selectedDay=null;
                     calendar.draw();
                 }
             }
@@ -245,31 +259,57 @@
                if(dataTd[i].getAttribute("data-id")){
                    dataTd[i].onmouseover=function () {
                        this.style.backgroundColor=calendar.colors.select_hover;
+                       this.style.color="#fff";
                    };
                    dataTd[i].onmouseout=function () {
                        this.style.backgroundColor="transparent";
+                       this.style.color="#000";
                    };
                    dataTd[i].onclick=function () {
                        console.log(this.getAttribute("data-id"));
-                       calendar.slectedYear=calendar.year;
-                       calendar.selectedMonth=calendar.month;
+                       calendar.selectedYear=calendar.year;
+                       calendar.selectedMonth=calendar.month+1;
                        calendar.selectedDay=this.getAttribute("data-id");
+
                        //TODO 回填表单
+                       calendar.inputBox.value=calendar.selectedYear+'-'+calendar.selectedMonth+'-'+calendar.selectedDay;
                        calendar.close();
                    }
                }
            }
         }
 
+        var today=document.getElementsByClassName("s-today")[0];
+        var clear=document.getElementsByClassName("s-clear")[0];
+        today.onclick=function () {
+            calendar.selectedYear=calendar.year=new Date().getFullYear();
+            calendar.selectedMonth=calendar.month=new Date().getMonth();
+            calendar.selected=calendar.day=new Date().getDate();
+            calendar.selectedDay=calendar.day=new Date().getDate();
+            calendar.inputBox.value=calendar.year+'-'+(calendar.month+1)+'-'+calendar.day;
+            calendar.close();
+        };
+        clear.onclick=function () {
+            calendar.year=new Date().getFullYear();
+            calendar.month=new Date().getMonth();
+            calendar.day=new Date().getDate();
+
+            calendar.selectedMonth=null;
+            calendar.selectedDay=null;
+
+            calendar.draw();
+            calendar.inputBox.value='';
+        }
 
 
     };
     Calendar.prototype.close=function () {
       var calendar = this;
-      var calendarForm = document.getElementsByClassName("calendarForm")[0];
+        calendar.isClose=true;
+        var calendarForm = calendar.panel.getElementsByClassName("calendarForm")[0];
+        console.log(calendarForm);
         calendar.panel.removeChild(calendarForm);
     };
     return window.Calendar = Calendar;
 })(window,undefined);
-var calendar=new Calendar();
-calendar.draw();
+
