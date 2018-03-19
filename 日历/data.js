@@ -17,13 +17,15 @@
 
     function Calendar(options) {
 
-        this.panel =options.panel ? document.getElementById(options.panel) : document.getElementById("calendarPanel");
-        this.inputBox=document.getElementById(options.inputBox);
-        console.log(this.inputBox);
-        this.selectedDate=options&&options.selectedDate;
+        this.panel = options.panel ? document.getElementById(options.panel) : document.getElementById("calendarPanel");
+        this.inputBox = document.getElementById(options.inputBox);
+        this.selectedDate = options&&options.selectedDate;
 
-        this.selectMonth=false;
-        this.isClose=true;
+        this.startTime = options.startTime||"";
+        this.endTime = options.endTime||"";
+
+        this.selectMonth = false;
+        this.isClose = true;
 
         this.date = new Date();
         this.year = this.date.getFullYear();
@@ -111,7 +113,6 @@
                strAry[strAry.length] = '<td class="select-month" style="width: 72%;cursor: pointer;cursor: pointer;"><span>'+calendar.year+'</span></td>';
            }else {
                /*标题显示月，年*/
-               console.log(calendar.month);
                strAry[strAry.length] = '<td class="select-month" style="width: 72%;cursor: pointer;"><span>'+calendar.language.month[calendar.month]+','+calendar.year+'</span></td>';
            }
            strAry[strAry.length] = '<td class="next" style="width: 14%;cursor: pointer;">&gt;</td></tr></tbody></table>';
@@ -170,14 +171,20 @@
                           if((i==0&&dayAry[7*i+j]>20)||i>=4&&dayAry[7*i+j]<=14){
                               strAry[strAry.length] = 'style="color: '+calendar.colors.time_out_color+';';
                           }else {
-                              strAry[strAry.length] ='data-id="'+dayAry[7*i+j]+'" style="cursor:pointer;';
-                              if((dayAry[7*i+j]==new Date().getDate())&&(calendar.month==new Date().getMonth())&&(calendar.year==new Date().getFullYear())){
-                                  //今天的字体颜色
-                                  strAry[strAry.length] = 'color:'+calendar.colors.cur_font_color+';';
+                              //console.log(calendar.scopeCtrl(calendar.startTime,calendar.endTime,calendar.year+'-'+calendar.month+'-'+dayAry[7*i+j]))
+                              if(calendar.scopeCtrl(calendar.startTime,calendar.endTime,calendar.year+'-'+(calendar.month+1)+'-'+dayAry[7*i+j])){
+                                  strAry[strAry.length] ='data-id="'+dayAry[7*i+j]+'" style="cursor:pointer;';
+                                  if((dayAry[7*i+j]==new Date().getDate())&&(calendar.month==new Date().getMonth())&&(calendar.year==new Date().getFullYear())){
+                                      //今天的字体颜色
+                                      strAry[strAry.length] = 'color:'+calendar.colors.cur_font_color+';';
+                                  }
+                                  if((dayAry[7*i+j]==calendar.selectedDay)&&(calendar.month==calendar.selectedMonth-1)&&(calendar.year==calendar.selectedYear)){
+                                      strAry[strAry.length] = 'color:#fff;background-color:'+calendar.colors.select_hover+';';
+                                  }
+                              }else {
+                                  strAry[strAry.length] = 'style="color: '+calendar.colors.time_out_color+';';
                               }
-                              if((dayAry[7*i+j]==calendar.selectedDay)&&(calendar.month==calendar.selectedMonth-1)&&(calendar.year==calendar.selectedYear)){
-                                  strAry[strAry.length] = 'color:#fff;background-color:'+calendar.colors.select_hover+';';
-                              }
+
                           }
 
 
@@ -204,18 +211,45 @@
          calendar.event();
 
     };
+    Calendar.prototype.scopeCtrl=function (startTime,endTime,curTime) {
+        var calendar=this;
+        var curS=Date.parse(curTime);
+        var startS=Date.parse(startTime);
+        var endS=Date.parse(endTime);
+        if((curS<startS)&&startTime!==""){
+            return false;
+        } else if((curS>endS)&&endTime!==""){
+            return false;
+        } else {return true;}
+
+
+    };
     Calendar.prototype.event=function () {
         var calendar=this;
         var prevMonth=document.getElementsByClassName("prev")[0];
         var nextMonth=document.getElementsByClassName("next")[0];
         var selectMonth=document.getElementsByClassName("select-month")[0];
         prevMonth.onclick=function () {
-            calendar.year--;
-            calendar.draw()
+            if(calendar.selectMonth){
+                calendar.year--;
+                calendar.draw()
+            }else {
+                calendar.month--;
+                calendar.month==-1?calendar.month=11:null;
+                calendar.draw();
+            }
+
         };
         nextMonth.onclick=function () {
-            calendar.year++;
-            calendar.draw()
+            if(calendar.selectMonth){
+                calendar.year++;
+                calendar.draw()
+            }else {
+                calendar.month++;
+                calendar.month==12?calendar.month=0:null;
+                calendar.draw();
+            }
+
         };
         selectMonth.onmouseover=function () {
             this.style.backgroundColor=calendar.colors.title_hover;
@@ -266,13 +300,15 @@
                        this.style.color="#000";
                    };
                    dataTd[i].onclick=function () {
-                       console.log(this.getAttribute("data-id"));
                        calendar.selectedYear=calendar.year;
                        calendar.selectedMonth=calendar.month+1;
                        calendar.selectedDay=this.getAttribute("data-id");
+                       var y=calendar.selectedYear;
 
+                       var m=String(calendar.selectedMonth).length<2?"0"+calendar.selectedMonth:calendar.selectedMonth;
+                       var d=calendar.selectedDay.length<2?"0"+calendar.selectedDay:calendar.selectedDay;
                        //TODO 回填表单
-                       calendar.inputBox.value=calendar.selectedYear+'-'+calendar.selectedMonth+'-'+calendar.selectedDay;
+                       calendar.inputBox.value=y+'-'+m+'-'+d;
                        calendar.close();
                    }
                }
@@ -286,7 +322,10 @@
             calendar.selectedMonth=calendar.month=new Date().getMonth();
             calendar.selected=calendar.day=new Date().getDate();
             calendar.selectedDay=calendar.day=new Date().getDate();
-            calendar.inputBox.value=calendar.year+'-'+(calendar.month+1)+'-'+calendar.day;
+            var y=calendar.year;
+            var m=String((calendar.month+1)).length<2?"0"+(calendar.month+1):(calendar.month+1);
+            var d=calendar.day.length<2?"0"+calendar.day:calendar.day;
+            calendar.inputBox.value=y+'-'+m+'-'+d;
             calendar.close();
         };
         clear.onclick=function () {
@@ -307,7 +346,6 @@
       var calendar = this;
         calendar.isClose=true;
         var calendarForm = calendar.panel.getElementsByClassName("calendarForm")[0];
-        console.log(calendarForm);
         calendar.panel.removeChild(calendarForm);
     };
     return window.Calendar = Calendar;
