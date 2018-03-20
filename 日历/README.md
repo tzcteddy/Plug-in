@@ -1,6 +1,11 @@
 ##日历
 
-
+###实现功能
++选择日期（选择年、月）
++清空日期
++选择开始时间后，选择结束时间不能早于开始时间
++选择开始结束后，选择开始时间不能晚于开始时间
++今天快捷选择；如果今天不在开始或结束范围内，则禁止点击
 ###对象方法
 + Calendar.year
 + Calendar.month
@@ -22,8 +27,12 @@
 ```
 
 ###实例上的方法
-calendar.draw()重绘日期内容
-calendar.close()关闭选择框
++calendar.getDateAry()获取日期数组
++calendar.draw()重绘日期内容
++calendar.scopeCtrl()判断范围
++calendar.event()绑定事件
++calendar.hover()绑定鼠标滑过事件
++calendar.close()关闭选择框
 
 ###初始化
 ```

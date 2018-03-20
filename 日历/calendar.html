@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>日历</title>
+    <link rel="stylesheet" href="./calendar.css">
+    <style>
+        body{
+            font-family: "Microsoft Yahei", "微软雅黑", "宋体", "Arial Unicode MS", System;
+        }
+    </style>
+</head>
+<body>
+     <div class="card-choose">
+         <dl class="choose-item choose-time-item">
+          <dt class="choose-t">评估完成时间</dt>
+          <dd class="choose-c choose-box choose-time">
+              <input type="text" id="start-time" placeholder="开始时间" value=""  readonly>
+              <div id="start-calendar"></div>
+          </dd>
+          <dd class="choose-time-line" style="display:inline-block;padding: 0 4px;line-height: 40px;vertical-align: top"><span style="display: inline-block;width: 12px;height: 1px;background: #cccccc"></span></dd>
+          <dd class="choose-c choose-box choose-time">
+              <input type="text" id="end-time" placeholder="结束时间" value="" readonly>
+              <div id="end-calendar"></div>
+          </dd>
+         </dl>
+     </div>
+</body>
+</html>
+<script src="calendar.js"></script>
+<script>
+    var starTime=document.getElementById("start-time");
+    var endTime=document.getElementById("end-time");
+
+    var calendar1=new Calendar({
+        panel:"start-calendar",
+        inputBox:"start-time",
+        selectedDate:starTime.value,
+    });
+    var calendar2=new Calendar({
+        panel:"end-calendar",
+        inputBox:"end-time",
+        selectedDate:endTime.value
+    });
+
+    starTime.onclick=function () {
+        if(calendar1.isClose){
+            !calendar2.isClose&&calendar2.close();
+            calendar1.endTime=document.getElementById("end-time").value;
+            calendar1.draw();
+        }else {
+            calendar1.close();
+        }
+
+    };
+    endTime.onclick=function () {
+        if(calendar2.isClose){
+            !calendar1.isClose&&calendar1.close();
+            calendar2.startTime=document.getElementById("start-time").value;
+            calendar2.draw();
+        }else {
+            calendar2.close();
+
+        }
+    };
+</script>

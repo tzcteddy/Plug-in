@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ .card-choose{
+    margin:50px 0 0 50px;
+    font-size: 0;
+    -webkit-text-size-adjust:none;
+}
+.choose-item{
+    display: inline-block;
+    margin-right: 20px;
+    /*width: 216px;*/
+}
+ .choose-item .choose-t{
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #82939d;
+}
+ .choose-item .choose-c{
+    width: 216px;
+    height: 34px;
+    line-height: 34px;
+    border-top: 2px solid #e9eef2;
+    border-radius: 5px;
+    font-size: 14px;
+
+}
+.choose-item .choose-box{
+    position: relative;
+
+}
+#start-time,#end-time{
+    display: inline-block;
+    padding-left: 10px;
+    width: 216px;
+    height: 34px;
+    /*line-height: 34px;*/
+    _line-height: 34px;
+
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: #f4f5f7;
+    color: #506371;
+}
+/******新加*********/
+.content .choose-time-item{
+    width: 476px;
+}
+.choose-time{
+    display: inline-block;
+}
+#start-calendar,#end-calendar{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 216px;
+    line-height: inherit;
+    background: #fff;
+    z-index: 2;
+}
+.calendarForm{
+    box-shadow: 0px 0px 10px 1px #f0f0f0;
+}
+.card-page{
+    position: relative;
+}
+

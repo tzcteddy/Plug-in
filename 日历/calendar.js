@@ -14,7 +14,12 @@
         });
         return template;
     };
-
+    /**
+     * @options Object
+     *    @panel  String:页面容器ID
+     *    @inputBox   String:页面输入框ID
+     *    @selectedDate String:已选中的时间，格式：'2018-08-08'
+     * */
     function Calendar(options) {
 
         this.panel = options.panel ? document.getElementById(options.panel) : document.getElementById("calendarPanel");
@@ -211,6 +216,11 @@
          calendar.event();
 
     };
+
+    /**
+     * @startTime  String:开始时间
+     * @endTime   String:结束时间
+     * @curTime   String:进行比较的时间*/
     Calendar.prototype.scopeCtrl=function (startTime,endTime,curTime) {
         var calendar=this;
         var curS=Date.parse(curTime);
@@ -221,11 +231,11 @@
         } else if((curS>endS)&&endTime!==""){
             return false;
         } else {return true;}
-
-
     };
     Calendar.prototype.event=function () {
         var calendar=this;
+
+        //title上的事件
         var prevMonth=document.getElementsByClassName("prev")[0];
         var nextMonth=document.getElementsByClassName("next")[0];
         var selectMonth=document.getElementsByClassName("select-month")[0];
@@ -235,7 +245,10 @@
                 calendar.draw()
             }else {
                 calendar.month--;
-                calendar.month==-1?calendar.month=11:null;
+                if(calendar.month==-1){
+                    calendar.month=11;
+                    calendar.year--;
+                }
                 calendar.draw();
             }
 
@@ -246,27 +259,25 @@
                 calendar.draw()
             }else {
                 calendar.month++;
-                calendar.month==12?calendar.month=0:null;
+                if(calendar.month==12){
+                    calendar.month=0;
+                    calendar.year++;
+                }
                 calendar.draw();
             }
 
-        };
-        selectMonth.onmouseover=function () {
-            this.style.backgroundColor=calendar.colors.title_hover;
-        };
-        selectMonth.onmouseout=function () {
-            this.style.backgroundColor="transparent";
         };
         selectMonth.onclick=function () {
             calendar.selectMonth=true;
             calendar.draw();
         };
+        calendar.hover(selectMonth);
 
-
+        //中间日期部分的事件
         var obj=document.getElementById("calendarTable");
         var dataBody=obj.tBodies[0];
         var dataTd=dataBody.getElementsByTagName("td");
-        if(calendar.selectMonth){//选择月事件
+        if(calendar.selectMonth){//选择month事件
 
             for(var i=0;i<dataTd.length;i++){
                 dataTd[i].index=i;
@@ -288,7 +299,7 @@
                     calendar.draw();
                 }
             }
-        }else {//选择日事件
+        }else {//选择day事件
            for(var i=0;i<dataTd.length;i++){
                if(dataTd[i].getAttribute("data-id")){
                    dataTd[i].onmouseover=function () {
@@ -315,8 +326,10 @@
            }
         }
 
+        //底部事件
         var today=document.getElementsByClassName("s-today")[0];
         var clear=document.getElementsByClassName("s-clear")[0];
+        var y,m,d;
         today.onclick=function () {
             calendar.selectedYear=calendar.year=new Date().getFullYear();
             calendar.selectedMonth=calendar.month=new Date().getMonth();
@@ -325,9 +338,16 @@
             var y=calendar.year;
             var m=String((calendar.month+1)).length<2?"0"+(calendar.month+1):(calendar.month+1);
             var d=calendar.day.length<2?"0"+calendar.day:calendar.day;
+            if(!calendar.scopeCtrl(calendar.startTime,calendar.endTime,y+'-'+m+'-'+d)) return;
             calendar.inputBox.value=y+'-'+m+'-'+d;
             calendar.close();
         };
+        if(calendar.scopeCtrl(calendar.startTime,calendar.endTime,new Date().getFullYear()+'-'+(new Date().getMonth()+1)+'-'+new Date().getDate())){
+            calendar.hover(today);
+        }else {today.style.color=calendar.colors.time_out_color;}
+
+
+
         clear.onclick=function () {
             calendar.year=new Date().getFullYear();
             calendar.month=new Date().getMonth();
@@ -338,9 +358,19 @@
 
             calendar.draw();
             calendar.inputBox.value='';
-        }
-
-
+        };
+        calendar.hover(clear)
+    };
+    /**
+     * @domObj :鼠标滑过的对象*/
+    Calendar.prototype.hover=function (domObj) {
+        var calendar=this;
+        domObj.onmouseover=function () {
+            this.style.backgroundColor=calendar.colors.title_hover;
+        };
+        domObj.onmouseout=function () {
+            this.style.backgroundColor=calendar.colors.title_bg;
+        };
     };
     Calendar.prototype.close=function () {
       var calendar = this;
