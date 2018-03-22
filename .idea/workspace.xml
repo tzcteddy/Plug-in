@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc1b4f9b-834e-4e02-9eec-845978b6c208" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/日历/.idea/workspace.xml" afterPath="$PROJECT_DIR$/日历/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/日历/README.md" afterPath="$PROJECT_DIR$/日历/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/日历/calendar.js" afterPath="$PROJECT_DIR$/日历/calendar.js" />
     </list>
     <ignored path="Plug-in.iws" />
@@ -26,33 +27,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="calendar.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="calendar.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/日历/calendar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="146" column="119" lean-forward="false" selection-start-line="146" selection-start-column="119" selection-end-line="146" selection-end-column="119" />
+            <state relative-caret-position="608">
+              <caret line="229" column="34" lean-forward="true" selection-start-line="229" selection-start-column="34" selection-end-line="229" selection-end-column="34" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <marker date="1521687168345" expanded="true" signature="4168:4203" ph="..." />
-                <marker date="1521687168345" expanded="true" signature="4298:4351" ph="..." />
-                <marker date="1521687168345" expanded="true" signature="4466:4522" ph="..." />
-                <marker date="1521687168345" expanded="true" signature="4621:4648" ph="..." />
-                <marker date="1521687168345" expanded="true" signature="4650:4654" ph="&lt;" />
-                <marker date="1521687168345" expanded="true" signature="4793:4836" ph="..." />
-                <marker date="1521687168345" expanded="true" signature="4994:5021" ph="..." />
-                <marker date="1521687168345" expanded="true" signature="5178:5205" ph="..." />
-                <marker date="1521687168345" expanded="true" signature="5207:5211" ph="&gt;" />
-                <marker date="1521687168345" expanded="true" signature="5352:5364" ph="..." />
-                <marker date="1521687168345" expanded="true" signature="5636:5685" ph="..." />
-                <marker date="1521687168345" expanded="true" signature="7254:7327" ph="..." />
-                <marker date="1521687168345" expanded="true" signature="7493:7570" ph="..." />
-                <marker date="1521687168345" expanded="true" signature="7737:7790" ph="..." />
-                <marker date="1521687168345" expanded="true" signature="7961:7973" ph="..." />
-                <marker date="1521687168345" expanded="true" signature="10160:10171" ph="..." />
-                <marker date="1521687168345" expanded="true" signature="10243:10339" ph="..." />
-                <marker date="1521687168345" expanded="true" signature="10438:10464" ph="..." />
-                <marker date="1521687168345" expanded="true" signature="10536:10562" ph="..." />
+                <marker date="1521715301642" expanded="true" signature="4291:4326" ph="..." />
+                <marker date="1521715301642" expanded="true" signature="4421:4474" ph="..." />
+                <marker date="1521715301642" expanded="true" signature="4589:4645" ph="..." />
+                <marker date="1521715301642" expanded="true" signature="4744:4771" ph="..." />
+                <marker date="1521715301642" expanded="true" signature="4773:4777" ph="&lt;" />
+                <marker date="1521715301642" expanded="true" signature="4916:4959" ph="..." />
+                <marker date="1521715301642" expanded="true" signature="5117:5144" ph="..." />
+                <marker date="1521715301642" expanded="true" signature="5301:5328" ph="..." />
+                <marker date="1521715301642" expanded="true" signature="5330:5334" ph="&gt;" />
+                <marker date="1521715301642" expanded="true" signature="5475:5487" ph="..." />
+                <marker date="1521715301642" expanded="true" signature="5759:5808" ph="..." />
+                <marker date="1521715301642" expanded="true" signature="7377:7450" ph="..." />
+                <marker date="1521715301642" expanded="true" signature="7616:7693" ph="..." />
+                <marker date="1521715301642" expanded="true" signature="7860:7913" ph="..." />
+                <marker date="1521715301642" expanded="true" signature="8084:8096" ph="..." />
+                <marker date="1521715301642" expanded="true" signature="10283:10294" ph="..." />
+                <marker date="1521715301642" expanded="true" signature="10366:10462" ph="..." />
+                <marker date="1521715301642" expanded="true" signature="10561:10587" ph="..." />
+                <marker date="1521715301642" expanded="true" signature="10659:10685" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/日历/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="853">
+              <caret line="45" column="41" lean-forward="false" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calendar.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/日历/calendar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="49" column="26" lean-forward="false" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,6 +85,10 @@
       <find>level-show-icon</find>
       <find>positionSelected</find>
       <find>showSelected</find>
+      <find>onclick</find>
+      <find>calendar.star</find>
+      <find>startTime</find>
+      <find>scopeCtrl</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -78,6 +103,7 @@
         <option value="$PROJECT_DIR$/层级选择/level-choose.html" />
         <option value="$PROJECT_DIR$/日历/data.js" />
         <option value="$PROJECT_DIR$/日历/calendar.js" />
+        <option value="$PROJECT_DIR$/日历/README.md" />
       </list>
     </option>
   </component>
@@ -108,6 +134,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -136,8 +164,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -170,7 +196,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.data.html">
+  <component name="RunManager" selected="JavaScript Debug.calendar.html">
     <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Plug-in/缩略图/index.html">
       <method />
     </configuration>
@@ -183,13 +209,29 @@
     <configuration default="false" name="data.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Plug-in/日历/data.html">
       <method />
     </configuration>
+    <configuration default="false" name="calendar.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Plug-in/日历/calendar.html">
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
     <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
       <method />
     </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
       <config-file value="" />
       <node-interpreter value="project" />
       <envs />
@@ -236,18 +278,20 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.vin查询结果页.html" />
       <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.level-choose.html" />
       <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.data.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.calendar.html" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.data.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.level-choose.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.vin查询结果页.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.calendar.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.data.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.level-choose.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.vin查询结果页.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -266,15 +310,16 @@
       <workItem from="1520846512783" duration="3053000" />
       <workItem from="1520849607971" duration="1020000" />
       <workItem from="1521268470220" duration="11326000" />
-      <workItem from="1521686911306" duration="256000" />
+      <workItem from="1521686911306" duration="371000" />
+      <workItem from="1521711816383" duration="3467000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19856000" />
+    <option name="totallyTimeSpent" value="23438000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09536354" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -314,6 +359,35 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/日历/calendar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1521715301642" expanded="true" signature="4291:4326" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="4421:4474" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="4589:4645" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="4744:4771" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="4773:4777" ph="&lt;" />
+            <marker date="1521715301642" expanded="true" signature="4916:4959" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="5117:5144" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="5301:5328" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="5330:5334" ph="&gt;" />
+            <marker date="1521715301642" expanded="true" signature="5475:5487" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="5759:5808" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="7377:7450" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="7616:7693" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="7860:7913" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="8084:8096" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="10283:10294" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="10366:10462" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="10561:10587" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="10659:10685" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/层级选择/js/level-choose.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4995">
@@ -486,32 +560,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/日历/data.html" />
     <entry file="file://$PROJECT_DIR$/日历/data.js" />
+    <entry file="file://$PROJECT_DIR$/日历/calendar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="49" column="26" lean-forward="false" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/日历/calendar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="146" column="119" lean-forward="false" selection-start-line="146" selection-start-column="119" selection-end-line="146" selection-end-column="119" />
+        <state relative-caret-position="608">
+          <caret line="229" column="34" lean-forward="true" selection-start-line="229" selection-start-column="34" selection-end-line="229" selection-end-column="34" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <marker date="1521687168345" expanded="true" signature="4168:4203" ph="..." />
-            <marker date="1521687168345" expanded="true" signature="4298:4351" ph="..." />
-            <marker date="1521687168345" expanded="true" signature="4466:4522" ph="..." />
-            <marker date="1521687168345" expanded="true" signature="4621:4648" ph="..." />
-            <marker date="1521687168345" expanded="true" signature="4650:4654" ph="&lt;" />
-            <marker date="1521687168345" expanded="true" signature="4793:4836" ph="..." />
-            <marker date="1521687168345" expanded="true" signature="4994:5021" ph="..." />
-            <marker date="1521687168345" expanded="true" signature="5178:5205" ph="..." />
-            <marker date="1521687168345" expanded="true" signature="5207:5211" ph="&gt;" />
-            <marker date="1521687168345" expanded="true" signature="5352:5364" ph="..." />
-            <marker date="1521687168345" expanded="true" signature="5636:5685" ph="..." />
-            <marker date="1521687168345" expanded="true" signature="7254:7327" ph="..." />
-            <marker date="1521687168345" expanded="true" signature="7493:7570" ph="..." />
-            <marker date="1521687168345" expanded="true" signature="7737:7790" ph="..." />
-            <marker date="1521687168345" expanded="true" signature="7961:7973" ph="..." />
-            <marker date="1521687168345" expanded="true" signature="10160:10171" ph="..." />
-            <marker date="1521687168345" expanded="true" signature="10243:10339" ph="..." />
-            <marker date="1521687168345" expanded="true" signature="10438:10464" ph="..." />
-            <marker date="1521687168345" expanded="true" signature="10536:10562" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="4291:4326" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="4421:4474" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="4589:4645" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="4744:4771" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="4773:4777" ph="&lt;" />
+            <marker date="1521715301642" expanded="true" signature="4916:4959" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="5117:5144" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="5301:5328" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="5330:5334" ph="&gt;" />
+            <marker date="1521715301642" expanded="true" signature="5475:5487" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="5759:5808" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="7377:7450" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="7616:7693" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="7860:7913" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="8084:8096" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="10283:10294" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="10366:10462" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="10561:10587" ph="..." />
+            <marker date="1521715301642" expanded="true" signature="10659:10685" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/日历/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="853">
+          <caret line="45" column="41" lean-forward="false" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>

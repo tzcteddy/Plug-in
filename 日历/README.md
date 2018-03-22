@@ -42,6 +42,7 @@
 new Calendar({
   panle:"panle",              //页面容器的id
   inputBox:"inputBox",        //页面input框的id
-  selectedDate:"2018-08-08"   //已选中的时间，可有可无
+  selectedDate:"2018-08-08",   //已选中的时间，可有可无
+  clearCallback:function(){}   //点击清除时的回调
 })
 ```

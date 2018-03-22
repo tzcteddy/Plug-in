@@ -18,13 +18,15 @@
      * @options Object
      *    @panel  String:页面容器ID
      *    @inputBox   String:页面输入框ID
-     *    @selectedDate String:已选中的时间，格式：'2018-08-08'
+     *    @selectedDate String:(选填)已选中的时间，格式：'2018-08-08'
+     *    @clearCallback Function:点击清除按钮时的回调
      * */
     function Calendar(options) {
 
         this.panel = options.panel ? document.getElementById(options.panel) : document.getElementById("calendarPanel");
         this.inputBox = document.getElementById(options.inputBox);
-        this.selectedDate = options&&options.selectedDate;
+        this.selectedDate = options&&options.selectedDate?options.selectedDate:'';
+        this.clearCallback=options.clearCallback;
 
         this.startTime = options.startTime||"";
         this.endTime = options.endTime||"";
@@ -225,9 +227,17 @@
      * @curTime   String:进行比较的时间*/
     Calendar.prototype.scopeCtrl=function (startTime,endTime,curTime) {
         var calendar=this;
+        //解决选择了开始时间，结束时间把开始时间排除（不能选择）的问题
+        var curArray=curTime.split("-");
+        var y=curArray[0];
+        var m=curArray[1].length<2?"0"+curArray[1]:curArray[1];
+        var d=curArray[2].length<2?"0"+curArray[2]:curArray[2];
+        curTime=y+"-"+m+"-"+d;
+
         var curS=Date.parse(curTime);
         var startS=Date.parse(startTime);
         var endS=Date.parse(endTime);
+
         if((curS<startS)&&startTime!==""){
             return false;
         } else if((curS>endS)&&endTime!==""){
@@ -241,7 +251,9 @@
         var prevMonth=document.getElementsByClassName("prev")[0];
         var nextMonth=document.getElementsByClassName("next")[0];
         var selectMonth=document.getElementsByClassName("select-month")[0];
-        prevMonth.onclick=function () {
+        prevMonth.onclick=function (e) {
+            e.stopPropagation?e.stopPropagation():e.cancelBubble=true;
+
             if(calendar.selectMonth){
                 calendar.year--;
                 calendar.draw()
@@ -253,9 +265,11 @@
                 }
                 calendar.draw();
             }
-
         };
-        nextMonth.onclick=function () {
+        calendar.hover(prevMonth);
+        nextMonth.onclick=function (e) {
+            e.stopPropagation?e.stopPropagation():e.cancelBubble=true;
+
             if(calendar.selectMonth){
                 calendar.year++;
                 calendar.draw()
@@ -269,7 +283,10 @@
             }
 
         };
-        selectMonth.onclick=function () {
+        calendar.hover(nextMonth);
+        selectMonth.onclick=function (e) {
+            e.stopPropagation?e.stopPropagation():e.cancelBubble=true;
+
             calendar.selectMonth=true;
             calendar.draw();
         };
@@ -291,7 +308,9 @@
                     this.style.backgroundColor="transparent";
                     this.style.color="#000";
                 };
-                dataTd[i].onclick=function () {
+                dataTd[i].onclick=function (e) {
+                    e.stopPropagation?e.stopPropagation():e.cancelBubble=true;
+
                     calendar.selectMonth=false;
                     calendar.month=this.index;
 
@@ -312,7 +331,9 @@
                        this.style.backgroundColor="transparent";
                        this.style.color="#000";
                    };
-                   dataTd[i].onclick=function () {
+                   dataTd[i].onclick=function (e) {
+                       e.stopPropagation?e.stopPropagation():e.cancelBubble=true;
+
                        calendar.selectedYear=calendar.year;
                        calendar.selectedMonth=calendar.month+1;
                        calendar.selectedDay=this.getAttribute("data-id");
@@ -332,7 +353,9 @@
         var today=document.getElementsByClassName("s-today")[0];
         var clear=document.getElementsByClassName("s-clear")[0];
         var y,m,d;
-        today.onclick=function () {
+        today.onclick=function (e) {
+            e.stopPropagation?e.stopPropagation():e.cancelBubble=true;
+
             calendar.selectedYear=calendar.year=new Date().getFullYear();
             calendar.selectedMonth=calendar.month=new Date().getMonth();
             calendar.selected=calendar.day=new Date().getDate();
@@ -350,14 +373,18 @@
 
 
 
-        clear.onclick=function () {
+        clear.onclick=function (e) {
+            e.stopPropagation?e.stopPropagation():e.cancelBubble=true;
+
             calendar.year=new Date().getFullYear();
             calendar.month=new Date().getMonth();
             calendar.day=new Date().getDate();
 
             calendar.selectedMonth=null;
             calendar.selectedDay=null;
-
+            if(Object.prototype.toString.call(calendar.clearCallback)=="[object Function]"){
+                calendar.clearCallback();
+            }
             calendar.draw();
             calendar.inputBox.value='';
         };
