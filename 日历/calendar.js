@@ -134,7 +134,7 @@
                   strAry[strAry.length] = '<tr style="height: 40px;line-height: 40px;text-align: center">';
                   for(var j=0;j<3;j++){
                       strAry[strAry.length] = '<td ';
-                      if((index==new Date().getMonth())&&(calendar.year==new Date().getFullYear())){
+                      if((index==new Date().getMonth())&&(calendar.year==new Date().getFullYear())){//当前月样式
                           if((index==calendar.selectedMonth-1)&&(calendar.year==calendar.selectedYear)){
                               strAry[strAry.length] = 'style="color:#fff;background-color:'+calendar.colors.select_hover+';color:'+calendar.colors.cur_font_color+';cursor: pointer;">';
                           }else {
@@ -144,7 +144,7 @@
                           if((index==calendar.selectedMonth-1)&&(calendar.year==calendar.selectedYear)){
                               strAry[strAry.length] = 'style="color:#fff;background-color:'+calendar.colors.select_hover+';cursor: pointer;">';
                           }else {
-                              strAry[strAry.length] = 'style="cursor: pointer;">';
+                              strAry[strAry.length] = 'style="cursor: pointer;color:'+calendar.colors.time_color+';">';
                           }
                       }
                       strAry[strAry.length] = calendar.language.month[index]+'</td>';
@@ -178,15 +178,17 @@
                           }else {
                               //console.log(calendar.scopeCtrl(calendar.startTime,calendar.endTime,calendar.year+'-'+calendar.month+'-'+dayAry[7*i+j]))
                               if(calendar.scopeCtrl(calendar.startTime,calendar.endTime,calendar.year+'-'+(calendar.month+1)+'-'+dayAry[7*i+j])){
-                                  strAry[strAry.length] ='data-id="'+dayAry[7*i+j]+'" style="cursor:pointer;';
+                                  strAry[strAry.length] ='data-id="'+dayAry[7*i+j]+'" style="cursor:pointer;color:'+calendar.colors.time_color+';';
                                   if((dayAry[7*i+j]==new Date().getDate())&&(calendar.month==new Date().getMonth())&&(calendar.year==new Date().getFullYear())){
                                       //今天的字体颜色
                                       strAry[strAry.length] = 'color:'+calendar.colors.cur_font_color+';';
                                   }
                                   if((dayAry[7*i+j]==calendar.selectedDay)&&(calendar.month==calendar.selectedMonth-1)&&(calendar.year==calendar.selectedYear)){
+                                      //设置选中日期的样式
                                       strAry[strAry.length] = 'color:#fff;background-color:'+calendar.colors.select_hover+';';
                                   }
                               }else {
+                                  //不在范围的日子（开始时间晚于结束时间 或 结束时间早于开始时间）
                                   strAry[strAry.length] = 'style="color: '+calendar.colors.time_out_color+';';
                               }
 
