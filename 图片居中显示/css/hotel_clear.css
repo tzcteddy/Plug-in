@@ -1,0 +1,105 @@
+main{
+    background: #F5BD53 ;
+}
+main .switch{
+    position: relative;
+    height: 0.34rem;
+}
+main .switch .switch-middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -0.14rem 0 0 -0.17rem;
+    display: inline-block;
+    width: 0.34rem;
+    height: 0.28rem;
+    background: #fff;
+
+}
+main .switch span{
+    position: absolute;
+    top: 0;
+
+    z-index: 2;
+    display: inline-block;
+    width: 0.78rem;
+    height: 0.34rem;
+    line-height: 0.34rem;
+    border-radius: 0.17rem;
+    font-size: 0.14rem;
+    text-align: center;
+    background: #fff;
+}
+main .switch span:nth-child(1){
+    left: 1.05rem;
+}
+main .switch span:nth-child(3){
+    right: 1.05rem;
+}
+main .switch span.active{
+    background: #FFA700;
+}
+main .content .wrap{
+  padding-top: 0.32rem;
+  width: 100%;
+}
+main .content .wrap .list{
+    position: relative;
+    padding: 0.14rem 0.1rem 0 0.16rem;
+    margin-bottom: 0.29rem;
+    width: 3.45rem;
+    height: 1.37rem;
+    background:#FFF ;
+    overflow: visible;
+    border: 1px solid #383838;
+    box-shadow: 0.04rem 0.04rem 0px 0px #987850;
+    box-sizing: border-box;
+}
+main .content .wrap .list .info{
+    position: relative;
+    width: 2.16rem;
+}
+main .content .wrap .list .pic{
+    position: absolute;
+    top: -0.21rem;
+    right: -0.04rem;
+    width: 1.11rem;
+    height: 1.06rem;
+    background: #E0E0E0;
+    overflow: hidden;
+}
+main .content .wrap .list .name{
+    margin-bottom: 0.03rem;
+    width: 2.16rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 0.25rem;
+    font-size: 0.18rem;
+    font-weight: bold;
+    color: #383838;
+}
+main .content .wrap .list .address{
+    margin-bottom: 0.09rem;
+    line-height: 0.16rem;
+    font-size: 0.11rem;
+    color: #999999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+main .content .wrap .list .price{
+    margin-bottom: 0.09rem;
+    line-height: 0.18rem;
+    font-size: 0.18rem;
+    color: #383838;
+}
+main .content .wrap .list .price em{
+    font-style: normal;
+    font-size: 0.12rem;
+}
+main .content .wrap .list .desc{
+    line-height: 0.17rem;
+    font-size: 0.12rem;
+    color: #312026;
+}

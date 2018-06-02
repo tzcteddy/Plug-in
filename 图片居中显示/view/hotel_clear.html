@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>星级酒店-无柱宴会厅</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/flex.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/hotel_clear.css">
+    <script>
+        (function () {
+            var docEl = document.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if(clientWidth>=750){
+                        clientWidth=750;
+                    }
+                    docEl.style.fontSize = 100 * (clientWidth / 375) + 'px';
+                };
+            if (!document.addEventListener) return;
+            window.addEventListener(resizeEvt, recalc, false);
+            document.addEventListener('DOMContentLoaded', recalc, false);
+        })()
+    </script>
+</head>
+<body>
+<main>
+    <div class="banner"><img src="../image/hotel_clear/banner.png" alt=""></div>
+    <div class="switch" flex="dir:left main:center">
+        <span class="active" switch-ctrl="ctn1">风情欧式</span>
+        <i class="switch-middle"></i>
+        <span switch-ctrl="ctn2">古韵中式</span>
+    </div>
+    <div class="content-wrap ctn1 show">
+        <div class="content" >
+            <ul class="wrap" flex="dir:top cross:center">
+                <li class="list" seller_id="550">
+                    <div class="pic"><img class="lazy"  data-original="../image/hotel_clear/list/youtanghuangguan.png" alt=""></div>
+                    <div class="info" flex="dir:top main:left">
+                        <p class="name">悠唐皇冠假日酒店</p>
+                        <p class="address">北京市朝阳区朝阳门</p>
+                        <p class="price">&yen;6800 <em>起／每桌</em></p>
+                    </div>
+                    <p class="desc">拥有穹顶阳光的婚礼堂，1050平方米的无柱大宴会厅</p>
+                </li>
+                <li class="list" seller_id="554">
+                    <div class="pic"><img class="lazy"  data-original="../image/hotel_clear/list/beichenzhouji.png" alt=""></div>
+                    <div class="info" flex="dir:top main:left">
+                        <p class="name">北辰洲际酒店</p>
+                        <p class="address">北京市朝阳区北辰路</p>
+                        <p class="price">&yen;5800 <em>起／每桌</em></p>
+                    </div>
+                    <p class="desc">拥有3间面积不同宴会厅，交通方便，硬件齐全。</p>
+                </li>
+                <li class="list" seller_id="35">
+                    <div class="pic"><img class="lazy"  data-original="../image/hotel_clear/list/huaerdaofu.png" alt=""></div>
+                    <div class="info" flex="dir:top main:left">
+                        <p class="name">华尔道夫酒店</p>
+                        <p class="address">北京市东城区金鱼胡同</p>
+                        <p class="price">&yen;7588 <em>起／每桌</em></p>
+                    </div>
+                    <p class="desc">地处王府井核心地段，华丽精致无柱宴会厅。</p>
+                </li>
+                <li class="list" seller_id="1036">
+                    <div class="pic"><img class="lazy"  data-original="../image/hotel_clear/list/baiyue.png" alt=""></div>
+                    <div class="info" flex="dir:top main:left">
+                        <p class="name">北京柏悦酒店</p>
+                        <p class="address">北京市朝阳区建国门</p>
+                        <p class="price">&yen;8800 <em>起／每桌</em></p>
+                    </div>
+                    <p class="desc">设施完备场地多样的，能满足您各种婚宴需求。</p>
+                </li>
+                <li class="list" seller_id="366">
+                    <div class="pic"><img class="lazy"  data-original="../image/hotel_clear/list/xilaideng.png" alt=""></div>
+                    <div class="info" flex="dir:top main:left">
+                        <p class="name">北京金隅喜来登酒店</p>
+                        <p class="address">北京市东城区安贞桥</p>
+                        <p class="price">&yen;5888 <em>起／每桌</em></p>
+                    </div>
+                    <p class="desc">面积各异的双宴会厅以供选择。</p>
+                </li>
+                <li class="list" seller_id="190">
+                    <div class="pic"><img class="lazy"  data-original="../image/hotel_clear/list/lijun.png" alt=""></div>
+                    <div class="info" flex="dir:top main:left">
+                        <p class="name">北京励骏酒店</p>
+                        <p class="address">北京市东城区金宝街</p>
+                        <p class="price">&yen;8800 <em>起／每桌</em></p>
+                    </div>
+                    <p class="desc">华丽古典的欧式风格宴会厅，可最多容纳30桌宾客。</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content-wrap ctn2">
+        <div class="content" >
+            <ul class="wrap" flex="dir:top cross:center">
+                <li class="list" seller_id="34">
+                    <div class="pic"><img class="lazy"  data-original="../image/hotel_clear/list/guili.png" alt=""></div>
+                    <div class="info" flex="dir:top main:left">
+                        <p class="name">北京瑰丽酒店</p>
+                        <p class="address">北京市朝阳区呼家楼</p>
+                        <p class="price">&yen;8800 <em>起／每桌</em></p>
+                    </div>
+                    <p class="desc">2600㎡超大宴会厅。</p>
+                </li>
+                <li class="list" seller_id="92">
+                    <div class="pic"><img class="lazy"  data-original="../image/hotel_clear/list/jianyijingyuan.png" alt=""></div>
+                    <div class="info" flex="dir:top main:left">
+                        <p class="name">北京健壹景园</p>
+                        <p class="address">北京市海淀区玉泉山</p>
+                        <p class="price">&yen;5000 <em>起／每桌</em></p>
+                    </div>
+                    <p class="desc">将西方元素融入传统中式建筑，容纳38桌的大宴会厅。</p>
+                </li>
+                <li class="list" seller_id="816">
+                    <div class="pic"><img class="lazy"  data-original="../image/hotel_clear/list/xierdun.png" alt=""></div>
+                    <div class="info" flex="dir:top main:left">
+                        <p class="name">王府井希尔顿酒店</p>
+                        <p class="address">北京市东城区王府井</p>
+                        <p class="price">&yen;3988 <em>起／每桌</em></p>
+                    </div>
+                    <p class="desc">中式主题风格宴会厅，地处王府井核心商圈。</p>
+                </li>
+                <li class="list" seller_id="6642">
+                    <div class="pic"><img class="lazy"  data-original="../image/hotel_clear/list/yiheanman.png" alt=""></div>
+                    <div class="info" flex="dir:top main:left">
+                        <p class="name">颐和安缦</p>
+                        <p class="address">北京市海淀区颐和园</p>
+                        <p class="price">&yen;1199 <em>起／每桌</em></p>
+                    </div>
+                    <p class="desc">体验皇家园林的中式风骨。</p>
+                </li>
+                <li class="list" seller_id="221">
+                    <div class="pic"><img class="lazy"  data-original="../image/hotel_clear/list/jiuhuashan.png" alt=""></div>
+                    <div class="info" flex="dir:top main:left">
+                        <p class="name">九华山庄</p>
+                        <p class="address">北京市昌平区小汤山</p>
+                        <p class="price">&yen;3000 <em>起／每桌</em></p>
+                    </div>
+                    <p class="desc">东南亚风情园林式风格，占地面积约200亩。</p>
+                </li>
+                <li class="list" seller_id="970">
+                    <div class="pic"><img class="lazy"  data-original="../image/hotel_clear/list/haigongguan.png" alt=""></div>
+                    <div class="info" flex="dir:top main:left">
+                        <p class="name">北京海公馆商务会所</p>
+                        <p class="address">北京市朝阳区高碑店</p>
+                        <p class="price">&yen;4580 <em>起／每桌</em></p>
+                    </div>
+                    <p class="desc">白墙灰瓦映衬下的徽派建筑，一流的硬件设施。</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
+<script src="../js/zepto.min.js"></script>
+<script src="../js/event.js"></script>
+</body>
+</html>

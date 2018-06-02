@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc1b4f9b-834e-4e02-9eec-845978b6c208" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/滑动吸顶和定位/css/index.css" afterPath="$PROJECT_DIR$/滑动吸顶和定位/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/滑动吸顶和定位/js/index.js" afterPath="$PROJECT_DIR$/滑动吸顶和定位/js/index.js" />
-    </list>
+    <list default="true" id="bc1b4f9b-834e-4e02-9eec-845978b6c208" name="Default" comment="" />
     <ignored path="Plug-in.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -26,25 +23,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/滑动吸顶和定位/js/index.js">
+      <file leaf-file-name="hotel_clear.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/图片居中显示/view/hotel_clear.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="43" column="46" lean-forward="true" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
-              <folding>
-                <element signature="e#0#42#0" expanded="false" />
-                <element signature="e#380#516#0" expanded="false" />
-                <element signature="e#545#951#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="425">
+              <caret line="158" column="16" lean-forward="false" selection-start-line="158" selection-start-column="16" selection-end-line="158" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/滑动吸顶和定位/css/index.css">
+      <file leaf-file-name="hotel_clear.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/图片居中显示/css/hotel_clear.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="79" column="13" lean-forward="false" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="public.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/图片居中显示/css/public.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -96,6 +99,7 @@
         <option value="$PROJECT_DIR$/滑动吸顶和定位/index.html" />
         <option value="$PROJECT_DIR$/滑动吸顶和定位/js/index.js" />
         <option value="$PROJECT_DIR$/滑动吸顶和定位/css/index.css" />
+        <option value="$PROJECT_DIR$/图片居中显示/view/hotel_clear.html" />
       </list>
     </option>
   </component>
@@ -168,6 +172,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Plug-in" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Plug-in" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="图片居中显示" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Plug-in" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Plug-in" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="图片居中显示" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -182,7 +218,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="滑动吸顶和定位" />
+              <option name="myItemId" value="图片居中显示" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -208,11 +244,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\YYBJ\Desktop\pop\Plug-in\图片居中显示\css" />
+      <recent name="C:\Users\YYBJ\Desktop\pop\Plug-in\图片居中显示\js" />
+      <recent name="C:\Users\YYBJ\Desktop\pop\Plug-in\图片居中显示\view" />
       <recent name="C:\Users\YYBJ\Desktop\pop\Plug-in\弹框" />
       <recent name="C:\Users\YYBJ\Desktop\pop\Plug-in\滑动吸顶和定位\js" />
-      <recent name="C:\Users\YYBJ\Desktop\pop\Plug-in\滑动吸顶和定位\image" />
-      <recent name="C:\Users\YYBJ\Desktop\pop\Plug-in\滑动吸顶和定位\css" />
-      <recent name="C:\Users\HiWin10\Desktop\pro\Plug-in\层级选择" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\YYBJ\Desktop\pop\Plug-in\弹框\js" />
@@ -348,12 +384,12 @@
       <workItem from="1521268470220" duration="11326000" />
       <workItem from="1521686911306" duration="371000" />
       <workItem from="1521711816383" duration="3467000" />
-      <workItem from="1527919683157" duration="4445000" />
+      <workItem from="1527919683157" duration="4928000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27883000" />
+    <option name="totallyTimeSpent" value="28366000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1084" extended-state="0" />
@@ -396,80 +432,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/日历/calendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8853">
-          <caret line="229" column="34" lean-forward="true" selection-start-line="229" selection-start-column="34" selection-end-line="229" selection-end-column="34" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <marker date="1527919650952" expanded="true" signature="4291:4326" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="4421:4474" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="4589:4645" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="4744:4771" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="4773:4777" ph="&lt;" />
-            <marker date="1527919650952" expanded="true" signature="4916:4959" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="5117:5144" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="5301:5328" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="5330:5334" ph="&gt;" />
-            <marker date="1527919650952" expanded="true" signature="5475:5487" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="5759:5808" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="7377:7450" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="7616:7693" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="7860:7913" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="8084:8096" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="10283:10294" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="10366:10462" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="10561:10587" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="10659:10685" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/日历/calendar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1911">
-          <caret line="49" column="26" lean-forward="false" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/日历/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1755">
-          <caret line="45" column="41" lean-forward="false" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/日历/calendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <marker date="1527919650952" expanded="true" signature="4291:4326" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="4421:4474" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="4589:4645" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="4744:4771" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="4773:4777" ph="&lt;" />
-            <marker date="1527919650952" expanded="true" signature="4916:4959" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="5117:5144" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="5301:5328" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="5330:5334" ph="&gt;" />
-            <marker date="1527919650952" expanded="true" signature="5475:5487" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="5759:5808" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="7377:7450" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="7616:7693" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="7860:7913" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="8084:8096" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="10283:10294" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="10366:10462" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="10561:10587" ph="..." />
-            <marker date="1527919650952" expanded="true" signature="10659:10685" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/层级选择/js/level-choose.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4995">
@@ -798,6 +760,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/滑动吸顶和定位/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="78" column="10" lean-forward="true" selection-start-line="78" selection-start-column="10" selection-end-line="78" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/滑动吸顶和定位/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
@@ -810,10 +780,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/滑动吸顶和定位/css/index.css">
+    <entry file="file://$PROJECT_DIR$/图片居中显示/css/hotel_clear.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="79" column="13" lean-forward="false" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/图片居中显示/css/flex.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/图片居中显示/css/public.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/图片居中显示/js/event.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/图片居中显示/js/zepto.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/图片居中显示/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/图片居中显示/view/hotel_clear.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="158" column="16" lean-forward="false" selection-start-line="158" selection-start-column="16" selection-end-line="158" selection-end-column="16" />
           <folding />
         </state>
       </provider>
