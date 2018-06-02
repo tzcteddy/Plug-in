@@ -69,14 +69,14 @@ main .switch span.active:after{
     border-top: 0.1rem solid #A1B6FF;
 }
 #section1{
-    height: 6rem;
+    height:7rem;
     background: #00a0f5;
 }
 #section2{
-    height: 6rem;
+    height: 7rem;
     background: #ededed;
 }
 #section3{
-    height: 6rem;
+    height: 7rem;
     background: #9D2828;
 }

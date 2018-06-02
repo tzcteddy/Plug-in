@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc1b4f9b-834e-4e02-9eec-845978b6c208" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/滑动吸顶和定位/css/index.css" afterPath="$PROJECT_DIR$/滑动吸顶和定位/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/滑动吸顶和定位/js/index.js" afterPath="$PROJECT_DIR$/滑动吸顶和定位/js/index.js" />
     </list>
     <ignored path="Plug-in.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,30 +26,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/滑动吸顶和定位/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="27" column="6" lean-forward="false" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-              <folding>
-                <element signature="n#script#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/滑动吸顶和定位/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="82" column="25" lean-forward="false" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
+            <state relative-caret-position="341">
+              <caret line="43" column="46" lean-forward="true" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
-                <element signature="e#180#730#0" expanded="false" />
-                <element signature="e#755#891#0" expanded="false" />
-                <element signature="e#920#1326#0" expanded="false" />
-                <element signature="e#1353#1670#0" expanded="false" />
-                <element signature="e#1697#2431#0" expanded="false" />
+                <element signature="e#380#516#0" expanded="false" />
+                <element signature="e#545#951#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -57,8 +43,8 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/滑动吸顶和定位/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+            <state relative-caret-position="485">
+              <caret line="79" column="13" lean-forward="false" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -107,8 +93,8 @@
         <option value="$PROJECT_DIR$/弹框/alert.css" />
         <option value="$PROJECT_DIR$/弹框/pop.js" />
         <option value="$PROJECT_DIR$/弹框/index.html" />
-        <option value="$PROJECT_DIR$/滑动吸顶和定位/js/index.js" />
         <option value="$PROJECT_DIR$/滑动吸顶和定位/index.html" />
+        <option value="$PROJECT_DIR$/滑动吸顶和定位/js/index.js" />
         <option value="$PROJECT_DIR$/滑动吸顶和定位/css/index.css" />
       </list>
     </option>
@@ -201,20 +187,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plug-in" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Plug-in" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="弹框" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -376,12 +348,12 @@
       <workItem from="1521268470220" duration="11326000" />
       <workItem from="1521686911306" duration="371000" />
       <workItem from="1521711816383" duration="3467000" />
-      <workItem from="1527919683157" duration="3620000" />
+      <workItem from="1527919683157" duration="4445000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27058000" />
+    <option name="totallyTimeSpent" value="27883000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1084" extended-state="0" />
@@ -828,23 +800,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/滑动吸顶和定位/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="82" column="25" lean-forward="false" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
+        <state relative-caret-position="341">
+          <caret line="43" column="46" lean-forward="true" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
-            <element signature="e#180#730#0" expanded="false" />
-            <element signature="e#755#891#0" expanded="false" />
-            <element signature="e#920#1326#0" expanded="false" />
-            <element signature="e#1353#1670#0" expanded="false" />
-            <element signature="e#1697#2431#0" expanded="false" />
+            <element signature="e#380#516#0" expanded="false" />
+            <element signature="e#545#951#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/滑动吸顶和定位/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+        <state relative-caret-position="485">
+          <caret line="79" column="13" lean-forward="false" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
           <folding />
         </state>
       </provider>

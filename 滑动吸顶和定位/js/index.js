@@ -2,28 +2,16 @@
  * Created by tianzhicun 2018/6/2.
  */
 var Event=function () {
-
+    this.navOffsetTop=$(".nav").offset().top;
 };
 Event.prototype={
     constructor:Event,
     /**
      * @param type:true时切换*/
-    switch:function(e,ele,type){
+    switch:function(e,ele){
         var actionAry=[$(".switch .active")];
         actionAry.pop().removeClass("active");
         $(ele).addClass("active");
-        if(type){
-            var ctrlContent=[$("main .show")];
-            ctrlContent.pop().removeClass("show");
-            $("."+$(ele).attr("switch-ctrl")).addClass("show");
-            /*swiper&&swiper.destroy(true);
-             var swiper = new Swiper('.swiper-container', {
-             slidesPerView: "auto",
-             spaceBetween: 30
-             });*/
-        }else {
-            return;
-        }
     },
     isSticky:function(){
         var nav=document.getElementsByClassName("nav")[0];
@@ -45,7 +33,7 @@ Event.prototype={
         var $navBar=$(".nav span");
         $navBar.each(function(index,item){
             $(item).on("click",function(e){
-                _this.switch(e,this,true);
+                _this.switch(e,this);
                 $(window).scrollTop($("#section"+(index+1)).offset().top-$(".nav").height());
             })
         })
@@ -71,14 +59,5 @@ Event.prototype={
     },
 
 };
-$(".switch span").on("click",function (e) {
-    var _this=this;
-    if(!($(_this).hasClass("disable"))){
-        $(_this).addClass("disable");
-        // new Event().lazyLoad();
-    }
-    new Event().switch(e,_this,true)
-
-});
 new Event().bindNavBar();
 new Event().bindScroll();
