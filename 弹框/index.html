@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>弹框</title>
+    <link rel="stylesheet" href="css/pop.css">
+    <link rel="stylesheet" href="css/alert.css">
+    <style>
+        .btn{
+            margin: auto;
+            width:2rem;
+            height: 0.36rem;
+            line-height: 0.36rem;
+            background: #00a0f5;
+            border-radius: 0.18rem;
+            text-align:center ;
+            font-size: 0.14rem;
+            color: #FFF;
+        }
+    </style>
+    <script>
+        (function () {
+            var docEl = document.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if(clientWidth>=750){
+                        clientWidth=750;
+                    }
+                    docEl.style.fontSize = 100 * (clientWidth / 375) + 'px';
+                };
+            if (!document.addEventListener) return;
+            window.addEventListener(resizeEvt, recalc, false);
+            document.addEventListener('DOMContentLoaded', recalc, false);
+        })()
+    </script>
+</head>
+
+<body>
+   <div class="btn">预约</div>
+   <div class="alpha" style="display: none"></div>
+   <div class="fixed-wrap" style="display: none">
+       <!--领取名额-->
+       <div class="join-info join-info-1" style="display: none">
+           <div class="title-box">
+               <p class="join-title">还差一步就预约成功啦</p>
+               <p class="join-sub-title">填写您的手机号，商家24小时之内会联系您，沟通试纱时间</p>
+           </div>
+
+           <p class="join-fill join-fill-phone">
+               <input id="phone" type="text" placeholder="填写手机号以便商家联系您" maxlength="11">
+               <span class="error-msg">手机号输入格式错误</span>
+           </p>
+           <p class="join-fill join-fill-code">
+               <input id="code" type="text" placeholder="输入验证码" maxlength="4"><!-
+               -><span class=" disable">获取验证码</span>
+               <span class="error-msg">验证码错误</span>
+           </p>
+           <p class=" join-disable">确认领取</p>
+       </div>
+       <!--预约成功-->
+       <div class="join-info join-info-suc" style="display: none">
+           <!--<img src="./image/success.png" alt="">-->
+           <i class="close"></i>
+       </div>
+   </div>
+</body>
+<script src="js/zepto.min.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/alert.js"></script>
+<script src="js/pop.js"></script>
+<script>
+    var older = new OlderPop({
+        callBack:function () {
+            this.close();
+            new AlertPop({"message":"成功"})
+        }
+    });
+    $(".btn").on("click",function(){
+        older.showOlderPop()
+    })
+</script>
+</html>

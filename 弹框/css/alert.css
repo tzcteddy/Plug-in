@@ -1,0 +1,39 @@
+.alert-pop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 13;
+}
+.alert-pop .alert-mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 50;
+}
+.alert-pop .alert-msg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+.alert-pop .alert-msg .alert-text{
+    display: block;
+    height: 0.46rem;
+    line-height: 0.46rem;
+    padding: 0 0.15rem;
+    border-radius: 0.1rem;
+    background: #fff;
+    font-size: 0.18rem;
+
+}
